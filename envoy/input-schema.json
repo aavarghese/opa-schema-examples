@@ -1,0 +1,400 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "attributes",
+        "parsed_body",
+        "parsed_path",
+        "parsed_query",
+        "truncated_body"
+    ],
+    "properties": {
+        "attributes": {
+            "$id": "#/properties/attributes",
+            "type": "object",
+            "title": "The attributes schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "source",
+                "destination",
+                "request"
+            ],
+            "properties": {
+                "source": {
+                    "$id": "#/properties/attributes/properties/source",
+                    "type": "object",
+                    "title": "The source schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "address"
+                    ],
+                    "properties": {
+                        "address": {
+                            "$id": "#/properties/attributes/properties/source/properties/address",
+                            "type": "object",
+                            "title": "The address schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Address"
+                            ],
+                            "properties": {
+                                "Address": {
+                                    "$id": "#/properties/attributes/properties/source/properties/address/properties/Address",
+                                    "type": "object",
+                                    "title": "The Address schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "required": [
+                                        "SocketAddress"
+                                    ],
+                                    "properties": {
+                                        "SocketAddress": {
+                                            "$id": "#/properties/attributes/properties/source/properties/address/properties/Address/properties/SocketAddress",
+                                            "type": "object",
+                                            "title": "The SocketAddress schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "required": [
+                                                "PortSpecifier",
+                                                "address"
+                                            ],
+                                            "properties": {
+                                                "PortSpecifier": {
+                                                    "$id": "#/properties/attributes/properties/source/properties/address/properties/Address/properties/SocketAddress/properties/PortSpecifier",
+                                                    "type": "object",
+                                                    "title": "The PortSpecifier schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "required": [
+                                                        "PortValue"
+                                                    ],
+                                                    "properties": {
+                                                        "PortValue": {
+                                                            "$id": "#/properties/attributes/properties/source/properties/address/properties/Address/properties/SocketAddress/properties/PortSpecifier/properties/PortValue",
+                                                            "type": "integer",
+                                                            "title": "The PortValue schema",
+                                                            "description": "An explanation about the purpose of this instance."
+                                                        }
+                                                    },
+                                                    "additionalProperties": false
+                                                },
+                                                "address": {
+                                                    "$id": "#/properties/attributes/properties/source/properties/address/properties/Address/properties/SocketAddress/properties/address",
+                                                    "type": "string",
+                                                    "title": "The address schema",
+                                                    "description": "An explanation about the purpose of this instance."
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "destination": {
+                    "$id": "#/properties/attributes/properties/destination",
+                    "type": "object",
+                    "title": "The destination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "address"
+                    ],
+                    "properties": {
+                        "address": {
+                            "$id": "#/properties/attributes/properties/destination/properties/address",
+                            "type": "object",
+                            "title": "The address schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "Address"
+                            ],
+                            "properties": {
+                                "Address": {
+                                    "$id": "#/properties/attributes/properties/destination/properties/address/properties/Address",
+                                    "type": "object",
+                                    "title": "The Address schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "required": [
+                                        "SocketAddress"
+                                    ],
+                                    "properties": {
+                                        "SocketAddress": {
+                                            "$id": "#/properties/attributes/properties/destination/properties/address/properties/Address/properties/SocketAddress",
+                                            "type": "object",
+                                            "title": "The SocketAddress schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "required": [
+                                                "PortSpecifier",
+                                                "address"
+                                            ],
+                                            "properties": {
+                                                "PortSpecifier": {
+                                                    "$id": "#/properties/attributes/properties/destination/properties/address/properties/Address/properties/SocketAddress/properties/PortSpecifier",
+                                                    "type": "object",
+                                                    "title": "The PortSpecifier schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "required": [
+                                                        "PortValue"
+                                                    ],
+                                                    "properties": {
+                                                        "PortValue": {
+                                                            "$id": "#/properties/attributes/properties/destination/properties/address/properties/Address/properties/SocketAddress/properties/PortSpecifier/properties/PortValue",
+                                                            "type": "integer",
+                                                            "title": "The PortValue schema",
+                                                            "description": "An explanation about the purpose of this instance."
+                                                        }
+                                                    },
+                                                    "additionalProperties": false
+                                                },
+                                                "address": {
+                                                    "$id": "#/properties/attributes/properties/destination/properties/address/properties/Address/properties/SocketAddress/properties/address",
+                                                    "type": "string",
+                                                    "title": "The address schema",
+                                                    "description": "An explanation about the purpose of this instance."
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "request": {
+                    "$id": "#/properties/attributes/properties/request",
+                    "type": "object",
+                    "title": "The request schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "http"
+                    ],
+                    "properties": {
+                        "http": {
+                            "$id": "#/properties/attributes/properties/request/properties/http",
+                            "type": "object",
+                            "title": "The http schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "id",
+                                "method",
+                                "headers",
+                                "host",
+                                "path",
+                                "protocol",
+                                "body",
+                                "size"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/id",
+                                    "type": "string",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "method": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/method",
+                                    "type": "string",
+                                    "title": "The method schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "headers": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/headers",
+                                    "type": "object",
+                                    "title": "The headers schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "required": [
+                                        ":authority",
+                                        ":method",
+                                        ":path",
+                                        "accept",
+                                        "authorization",
+                                        "content-length",
+                                        "content-type",
+                                        "user-agent",
+                                        "x-forwarded-proto",
+                                        "x-request-id"
+                                    ],
+                                    "properties": {
+                                        ":authority": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/%3Aauthority",
+                                            "type": "string",
+                                            "title": "The :authority schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        ":method": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/%3Amethod",
+                                            "type": "string",
+                                            "title": "The :method schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        ":path": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/%3Apath",
+                                            "type": "string",
+                                            "title": "The :path schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "accept": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/accept",
+                                            "type": "string",
+                                            "title": "The accept schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "authorization": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/authorization",
+                                            "type": "string",
+                                            "title": "The authorization schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "content-length": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/content-length",
+                                            "type": "string",
+                                            "title": "The content-length schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "content-type": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/content-type",
+                                            "type": "string",
+                                            "title": "The content-type schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "user-agent": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/user-agent",
+                                            "type": "string",
+                                            "title": "The user-agent schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "x-forwarded-proto": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/x-forwarded-proto",
+                                            "type": "string",
+                                            "title": "The x-forwarded-proto schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        },
+                                        "x-request-id": {
+                                            "$id": "#/properties/attributes/properties/request/properties/http/properties/headers/properties/x-request-id",
+                                            "type": "string",
+                                            "title": "The x-request-id schema",
+                                            "description": "An explanation about the purpose of this instance."
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "host": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/host",
+                                    "type": "string",
+                                    "title": "The host schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "path": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/path",
+                                    "type": "string",
+                                    "title": "The path schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "protocol": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/protocol",
+                                    "type": "string",
+                                    "title": "The protocol schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "body": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/body",
+                                    "type": "string",
+                                    "title": "The body schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "size": {
+                                    "$id": "#/properties/attributes/properties/request/properties/http/properties/size",
+                                    "type": "integer",
+                                    "title": "The size schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "parsed_body": {
+            "$id": "#/properties/parsed_body",
+            "type": "object",
+            "title": "The parsed_body schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "firstname",
+                "lastname"
+            ],
+            "properties": {
+                "firstname": {
+                    "$id": "#/properties/parsed_body/properties/firstname",
+                    "type": "string",
+                    "title": "The firstname schema",
+                    "description": "An explanation about the purpose of this instance."
+                },
+                "lastname": {
+                    "$id": "#/properties/parsed_body/properties/lastname",
+                    "type": "string",
+                    "title": "The lastname schema",
+                    "description": "An explanation about the purpose of this instance."
+                }
+            },
+            "additionalProperties": false
+        },
+        "parsed_path": {
+            "$id": "#/properties/parsed_path",
+            "type": "array",
+            "title": "The parsed_path schema",
+            "description": "An explanation about the purpose of this instance.",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/parsed_path/items",
+                "type": "string",
+                "title": "The items schema",
+                "description": "An explanation about the purpose of this instance."
+            }
+        },
+        "parsed_query": {
+            "$id": "#/properties/parsed_query",
+            "type": "object",
+            "title": "The parsed_query schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "lang"
+            ],
+            "properties": {
+                "lang": {
+                    "$id": "#/properties/parsed_query/properties/lang",
+                    "type": "array",
+                    "title": "The lang schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "additionalItems": false,
+                    "items": {
+                        "$id": "#/properties/parsed_query/properties/lang/items",
+                        "type": "string",
+                        "title": "The items schema",
+                        "description": "An explanation about the purpose of this instance."
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "truncated_body": {
+            "$id": "#/properties/truncated_body",
+            "type": "boolean",
+            "title": "The truncated_body schema",
+            "description": "An explanation about the purpose of this instance."
+        }
+    },
+    "additionalProperties": false
+}

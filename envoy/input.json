@@ -1,0 +1,55 @@
+{
+    "attributes":{
+       "source":{
+          "address":{
+             "Address":{
+                "SocketAddress":{
+                   "PortSpecifier":{
+                      "PortValue":61402
+                   },
+                   "address":"172.17.0.1"
+                }
+             }
+          }
+       },
+       "destination":{
+          "address":{
+             "Address":{
+                "SocketAddress":{
+                   "PortSpecifier":{
+                      "PortValue":8000
+                   },
+                   "address":"172.17.0.6"
+                }
+             }
+          }
+       },
+       "request":{
+          "http":{
+             "id":"13519049518330544501",
+             "method":"POST",
+             "headers":{
+                ":authority":"192.168.99.206:30164",
+                ":method":"POST",
+                ":path":"/people?lang=en",
+                "accept":"*/*",
+                "authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJZbTlpIiwibmJmIjoxNTE0ODUxMTM5LCJleHAiOjE2NDEwODE1Mzl9.WCxNAveAVAdRCmkpIObOTaSd0AJRECY2Ch2Qdic3kU8",
+                "content-length":"41",
+                "content-type":"application/json",
+                "user-agent":"curl/7.54.0",
+                "x-forwarded-proto":"http",
+                "x-request-id":"7bca5c86-bf55-432c-b212-8c0f1dc999ec"
+             },
+             "host":"192.168.99.206:30164",
+             "path":"/people?lang=en",
+             "protocol":"HTTP/1.1",
+             "body":"{\"firstname\":\"Charlie\", \"lastname\":\"Opa\"}",
+             "size":41
+          }
+       }
+    },
+    "parsed_body":{"firstname": "Charlie", "lastname": "Opa"},
+    "parsed_path":["people"],
+    "parsed_query": {"lang": ["en"]},
+    "truncated_body": false
+  }

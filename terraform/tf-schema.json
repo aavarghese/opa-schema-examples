@@ -1,0 +1,1114 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "format_version",
+        "terraform_version",
+        "planned_values",
+        "resource_changes",
+        "configuration"
+    ],
+    "properties": {
+        "format_version": {
+            "$id": "#/properties/format_version",
+            "type": "string",
+            "title": "The format_version schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "terraform_version": {
+            "$id": "#/properties/terraform_version",
+            "type": "string",
+            "title": "The terraform_version schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "planned_values": {
+            "$id": "#/properties/planned_values",
+            "type": "object",
+            "title": "The planned_values schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "root_module"
+            ],
+            "properties": {
+                "root_module": {
+                    "$id": "#/properties/planned_values/properties/root_module",
+                    "type": "object",
+                    "title": "The root_module schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "resources"
+                    ],
+                    "properties": {
+                        "resources": {
+                            "$id": "#/properties/planned_values/properties/root_module/properties/resources",
+                            "type": "array",
+                            "title": "The resources schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "required": [
+                                            "address",
+                                            "mode",
+                                            "type",
+                                            "name",
+                                            "provider_name",
+                                            "schema_version",
+                                            "values"
+                                        ],
+                                        "properties": {
+                                            "address": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/address",
+                                                "type": "string",
+                                                "title": "The address schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "mode": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/mode",
+                                                "type": "string",
+                                                "title": "The mode schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "type": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/type",
+                                                "type": "string",
+                                                "title": "The type schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "name": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/name",
+                                                "type": "string",
+                                                "title": "The name schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "provider_name": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/provider_name",
+                                                "type": "string",
+                                                "title": "The provider_name schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "schema_version": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/schema_version",
+                                                "type": "integer",
+                                                "title": "The schema_version schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "values": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values",
+                                                "type": "object",
+                                                "title": "The values schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "required": [
+                                                    "availability_zones",
+                                                    "desired_capacity",
+                                                    "enabled_metrics",
+                                                    "force_delete",
+                                                    "health_check_grace_period",
+                                                    "health_check_type",
+                                                    "initial_lifecycle_hook",
+                                                    "launch_configuration",
+                                                    "launch_template",
+                                                    "max_size",
+                                                    "metrics_granularity",
+                                                    "min_elb_capacity",
+                                                    "min_size",
+                                                    "mixed_instances_policy",
+                                                    "name",
+                                                    "name_prefix",
+                                                    "placement_group",
+                                                    "protect_from_scale_in",
+                                                    "suspended_processes",
+                                                    "tag",
+                                                    "tags",
+                                                    "termination_policies",
+                                                    "timeouts",
+                                                    "wait_for_capacity_timeout",
+                                                    "wait_for_elb_capacity"
+                                                ],
+                                                "properties": {
+                                                    "availability_zones": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/availability_zones",
+                                                        "type": "array",
+                                                        "title": "The availability_zones schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "additionalItems": true,
+                                                        "items": {
+                                                            "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/availability_zones/items",
+                                                            "anyOf": [
+                                                                {
+                                                                    "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/availability_zones/items/anyOf/0",
+                                                                    "type": "string",
+                                                                    "title": "The first anyOf schema",
+                                                                    "description": "An explanation about the purpose of this instance."
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "desired_capacity": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/desired_capacity",
+                                                        "type": "integer",
+                                                        "title": "The desired_capacity schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "enabled_metrics": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/enabled_metrics",
+                                                        "type": "null",
+                                                        "title": "The enabled_metrics schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "force_delete": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/force_delete",
+                                                        "type": "boolean",
+                                                        "title": "The force_delete schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "health_check_grace_period": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/health_check_grace_period",
+                                                        "type": "integer",
+                                                        "title": "The health_check_grace_period schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "health_check_type": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/health_check_type",
+                                                        "type": "string",
+                                                        "title": "The health_check_type schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "initial_lifecycle_hook": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/initial_lifecycle_hook",
+                                                        "type": "array",
+                                                        "title": "The initial_lifecycle_hook schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "additionalItems": true,
+                                                        "items": {
+                                                            "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/initial_lifecycle_hook/items"
+                                                        }
+                                                    },
+                                                    "launch_configuration": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/launch_configuration",
+                                                        "type": "string",
+                                                        "title": "The launch_configuration schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "launch_template": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/launch_template",
+                                                        "type": "array",
+                                                        "title": "The launch_template schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "additionalItems": true,
+                                                        "items": {
+                                                            "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/launch_template/items"
+                                                        }
+                                                    },
+                                                    "max_size": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/max_size",
+                                                        "type": "integer",
+                                                        "title": "The max_size schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "metrics_granularity": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/metrics_granularity",
+                                                        "type": "string",
+                                                        "title": "The metrics_granularity schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "min_elb_capacity": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/min_elb_capacity",
+                                                        "type": "null",
+                                                        "title": "The min_elb_capacity schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "min_size": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/min_size",
+                                                        "type": "integer",
+                                                        "title": "The min_size schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "mixed_instances_policy": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/mixed_instances_policy",
+                                                        "type": "array",
+                                                        "title": "The mixed_instances_policy schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "additionalItems": true,
+                                                        "items": {
+                                                            "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/mixed_instances_policy/items"
+                                                        }
+                                                    },
+                                                    "name": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/name",
+                                                        "type": "string",
+                                                        "title": "The name schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "name_prefix": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/name_prefix",
+                                                        "type": "null",
+                                                        "title": "The name_prefix schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "placement_group": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/placement_group",
+                                                        "type": "null",
+                                                        "title": "The placement_group schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "protect_from_scale_in": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/protect_from_scale_in",
+                                                        "type": "boolean",
+                                                        "title": "The protect_from_scale_in schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "suspended_processes": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/suspended_processes",
+                                                        "type": "null",
+                                                        "title": "The suspended_processes schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "tag": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/tag",
+                                                        "type": "array",
+                                                        "title": "The tag schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "additionalItems": true,
+                                                        "items": {
+                                                            "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/tag/items"
+                                                        }
+                                                    },
+                                                    "tags": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/tags",
+                                                        "type": "null",
+                                                        "title": "The tags schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "termination_policies": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/termination_policies",
+                                                        "type": "null",
+                                                        "title": "The termination_policies schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "timeouts": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/timeouts",
+                                                        "type": "null",
+                                                        "title": "The timeouts schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "wait_for_capacity_timeout": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/wait_for_capacity_timeout",
+                                                        "type": "string",
+                                                        "title": "The wait_for_capacity_timeout schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    },
+                                                    "wait_for_elb_capacity": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/anyOf/0/properties/values/properties/wait_for_elb_capacity",
+                                                        "type": "null",
+                                                        "title": "The wait_for_elb_capacity schema",
+                                                        "description": "An explanation about the purpose of this instance."
+                                                    }
+                                                },
+                                                "additionalProperties": true
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        },
+        "resource_changes": {
+            "$id": "#/properties/resource_changes",
+            "type": "array",
+            "title": "The resource_changes schema",
+            "description": "An explanation about the purpose of this instance.",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/resource_changes/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/resource_changes/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "required": [
+                            "address",
+                            "mode",
+                            "type",
+                            "name",
+                            "provider_name",
+                            "change"
+                        ],
+                        "properties": {
+                            "address": {
+                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/address",
+                                "type": "string",
+                                "title": "The address schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "mode": {
+                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/mode",
+                                "type": "string",
+                                "title": "The mode schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "type": {
+                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/type",
+                                "type": "string",
+                                "title": "The type schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "name": {
+                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "provider_name": {
+                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/provider_name",
+                                "type": "string",
+                                "title": "The provider_name schema",
+                                "description": "An explanation about the purpose of this instance."
+                            },
+                            "change": {
+                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change",
+                                "type": "object",
+                                "title": "The change schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "required": [
+                                    "actions",
+                                    "before",
+                                    "after",
+                                    "after_unknown"
+                                ],
+                                "properties": {
+                                    "actions": {
+                                        "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/actions",
+                                        "type": "array",
+                                        "title": "The actions schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/actions/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/actions/items/anyOf/0",
+                                                    "type": "string",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "before": {
+                                        "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/before",
+                                        "type": "null",
+                                        "title": "The before schema",
+                                        "description": "An explanation about the purpose of this instance."
+                                    },
+                                    "after": {
+                                        "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after",
+                                        "type": "object",
+                                        "title": "The after schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "required": [
+                                            "availability_zones",
+                                            "desired_capacity",
+                                            "enabled_metrics",
+                                            "force_delete",
+                                            "health_check_grace_period",
+                                            "health_check_type",
+                                            "initial_lifecycle_hook",
+                                            "launch_configuration",
+                                            "launch_template",
+                                            "max_size",
+                                            "metrics_granularity",
+                                            "min_elb_capacity",
+                                            "min_size",
+                                            "mixed_instances_policy",
+                                            "name",
+                                            "name_prefix",
+                                            "placement_group",
+                                            "protect_from_scale_in",
+                                            "suspended_processes",
+                                            "tag",
+                                            "tags",
+                                            "termination_policies",
+                                            "timeouts",
+                                            "wait_for_capacity_timeout",
+                                            "wait_for_elb_capacity"
+                                        ],
+                                        "properties": {
+                                            "availability_zones": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/availability_zones",
+                                                "type": "array",
+                                                "title": "The availability_zones schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/availability_zones/items",
+                                                    "anyOf": [
+                                                        {
+                                                            "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/availability_zones/items/anyOf/0",
+                                                            "type": "string",
+                                                            "title": "The first anyOf schema",
+                                                            "description": "An explanation about the purpose of this instance."
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "desired_capacity": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/desired_capacity",
+                                                "type": "integer",
+                                                "title": "The desired_capacity schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "enabled_metrics": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/enabled_metrics",
+                                                "type": "null",
+                                                "title": "The enabled_metrics schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "force_delete": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/force_delete",
+                                                "type": "boolean",
+                                                "title": "The force_delete schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "health_check_grace_period": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/health_check_grace_period",
+                                                "type": "integer",
+                                                "title": "The health_check_grace_period schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "health_check_type": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/health_check_type",
+                                                "type": "string",
+                                                "title": "The health_check_type schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "initial_lifecycle_hook": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/initial_lifecycle_hook",
+                                                "type": "array",
+                                                "title": "The initial_lifecycle_hook schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/initial_lifecycle_hook/items"
+                                                }
+                                            },
+                                            "launch_configuration": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/launch_configuration",
+                                                "type": "string",
+                                                "title": "The launch_configuration schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "launch_template": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/launch_template",
+                                                "type": "array",
+                                                "title": "The launch_template schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/launch_template/items"
+                                                }
+                                            },
+                                            "max_size": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/max_size",
+                                                "type": "integer",
+                                                "title": "The max_size schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "metrics_granularity": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/metrics_granularity",
+                                                "type": "string",
+                                                "title": "The metrics_granularity schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "min_elb_capacity": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/min_elb_capacity",
+                                                "type": "null",
+                                                "title": "The min_elb_capacity schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "min_size": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/min_size",
+                                                "type": "integer",
+                                                "title": "The min_size schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "mixed_instances_policy": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/mixed_instances_policy",
+                                                "type": "array",
+                                                "title": "The mixed_instances_policy schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/mixed_instances_policy/items"
+                                                }
+                                            },
+                                            "name": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/name",
+                                                "type": "string",
+                                                "title": "The name schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "name_prefix": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/name_prefix",
+                                                "type": "null",
+                                                "title": "The name_prefix schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "placement_group": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/placement_group",
+                                                "type": "null",
+                                                "title": "The placement_group schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "protect_from_scale_in": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/protect_from_scale_in",
+                                                "type": "boolean",
+                                                "title": "The protect_from_scale_in schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "suspended_processes": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/suspended_processes",
+                                                "type": "null",
+                                                "title": "The suspended_processes schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "tag": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/tag",
+                                                "type": "array",
+                                                "title": "The tag schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/tag/items"
+                                                }
+                                            },
+                                            "tags": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/tags",
+                                                "type": "null",
+                                                "title": "The tags schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "termination_policies": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/termination_policies",
+                                                "type": "null",
+                                                "title": "The termination_policies schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "timeouts": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/timeouts",
+                                                "type": "null",
+                                                "title": "The timeouts schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "wait_for_capacity_timeout": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/wait_for_capacity_timeout",
+                                                "type": "string",
+                                                "title": "The wait_for_capacity_timeout schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "wait_for_elb_capacity": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after/properties/wait_for_elb_capacity",
+                                                "type": "null",
+                                                "title": "The wait_for_elb_capacity schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    },
+                                    "after_unknown": {
+                                        "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown",
+                                        "type": "object",
+                                        "title": "The after_unknown schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "required": [
+                                            "arn",
+                                            "availability_zones",
+                                            "default_cooldown",
+                                            "id",
+                                            "initial_lifecycle_hook",
+                                            "launch_template",
+                                            "load_balancers",
+                                            "mixed_instances_policy",
+                                            "service_linked_role_arn",
+                                            "tag",
+                                            "target_group_arns",
+                                            "vpc_zone_identifier"
+                                        ],
+                                        "properties": {
+                                            "arn": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/arn",
+                                                "type": "boolean",
+                                                "title": "The arn schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "availability_zones": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/availability_zones",
+                                                "type": "array",
+                                                "title": "The availability_zones schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/availability_zones/items",
+                                                    "anyOf": [
+                                                        {
+                                                            "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/availability_zones/items/anyOf/0",
+                                                            "type": "boolean",
+                                                            "title": "The first anyOf schema",
+                                                            "description": "An explanation about the purpose of this instance."
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "default_cooldown": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/default_cooldown",
+                                                "type": "boolean",
+                                                "title": "The default_cooldown schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "id": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/id",
+                                                "type": "boolean",
+                                                "title": "The id schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "initial_lifecycle_hook": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/initial_lifecycle_hook",
+                                                "type": "array",
+                                                "title": "The initial_lifecycle_hook schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/initial_lifecycle_hook/items"
+                                                }
+                                            },
+                                            "launch_template": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/launch_template",
+                                                "type": "array",
+                                                "title": "The launch_template schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/launch_template/items"
+                                                }
+                                            },
+                                            "load_balancers": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/load_balancers",
+                                                "type": "boolean",
+                                                "title": "The load_balancers schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "mixed_instances_policy": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/mixed_instances_policy",
+                                                "type": "array",
+                                                "title": "The mixed_instances_policy schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/mixed_instances_policy/items"
+                                                }
+                                            },
+                                            "service_linked_role_arn": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/service_linked_role_arn",
+                                                "type": "boolean",
+                                                "title": "The service_linked_role_arn schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "tag": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/tag",
+                                                "type": "array",
+                                                "title": "The tag schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/tag/items"
+                                                }
+                                            },
+                                            "target_group_arns": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/target_group_arns",
+                                                "type": "boolean",
+                                                "title": "The target_group_arns schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "vpc_zone_identifier": {
+                                                "$id": "#/properties/resource_changes/items/anyOf/0/properties/change/properties/after_unknown/properties/vpc_zone_identifier",
+                                                "type": "boolean",
+                                                "title": "The vpc_zone_identifier schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "configuration": {
+            "$id": "#/properties/configuration",
+            "type": "object",
+            "title": "The configuration schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "provider_config",
+                "root_module"
+            ],
+            "properties": {
+                "provider_config": {
+                    "$id": "#/properties/configuration/properties/provider_config",
+                    "type": "object",
+                    "title": "The provider_config schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "aws"
+                    ],
+                    "properties": {
+                        "aws": {
+                            "$id": "#/properties/configuration/properties/provider_config/properties/aws",
+                            "type": "object",
+                            "title": "The aws schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "required": [
+                                "name",
+                                "expressions"
+                            ],
+                            "properties": {
+                                "name": {
+                                    "$id": "#/properties/configuration/properties/provider_config/properties/aws/properties/name",
+                                    "type": "string",
+                                    "title": "The name schema",
+                                    "description": "An explanation about the purpose of this instance."
+                                },
+                                "expressions": {
+                                    "$id": "#/properties/configuration/properties/provider_config/properties/aws/properties/expressions",
+                                    "type": "object",
+                                    "title": "The expressions schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "required": [
+                                        "region"
+                                    ],
+                                    "properties": {
+                                        "region": {
+                                            "$id": "#/properties/configuration/properties/provider_config/properties/aws/properties/expressions/properties/region",
+                                            "type": "object",
+                                            "title": "The region schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "required": [
+                                                "constant_value"
+                                            ],
+                                            "properties": {
+                                                "constant_value": {
+                                                    "$id": "#/properties/configuration/properties/provider_config/properties/aws/properties/expressions/properties/region/properties/constant_value",
+                                                    "type": "string",
+                                                    "title": "The constant_value schema",
+                                                    "description": "An explanation about the purpose of this instance."
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    },
+                                    "additionalProperties": true
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "root_module": {
+                    "$id": "#/properties/configuration/properties/root_module",
+                    "type": "object",
+                    "title": "The root_module schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "resources"
+                    ],
+                    "properties": {
+                        "resources": {
+                            "$id": "#/properties/configuration/properties/root_module/properties/resources",
+                            "type": "array",
+                            "title": "The resources schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "required": [
+                                            "address",
+                                            "mode",
+                                            "type",
+                                            "name",
+                                            "provider_config_key",
+                                            "expressions",
+                                            "schema_version"
+                                        ],
+                                        "properties": {
+                                            "address": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/address",
+                                                "type": "string",
+                                                "title": "The address schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "mode": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/mode",
+                                                "type": "string",
+                                                "title": "The mode schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "type": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/type",
+                                                "type": "string",
+                                                "title": "The type schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "name": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/name",
+                                                "type": "string",
+                                                "title": "The name schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "provider_config_key": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/provider_config_key",
+                                                "type": "string",
+                                                "title": "The provider_config_key schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            },
+                                            "expressions": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions",
+                                                "type": "object",
+                                                "title": "The expressions schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "required": [
+                                                    "availability_zones",
+                                                    "desired_capacity",
+                                                    "force_delete",
+                                                    "health_check_grace_period",
+                                                    "health_check_type",
+                                                    "launch_configuration",
+                                                    "max_size",
+                                                    "min_size",
+                                                    "name"
+                                                ],
+                                                "properties": {
+                                                    "availability_zones": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/availability_zones",
+                                                        "type": "object",
+                                                        "title": "The availability_zones schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/availability_zones/properties/constant_value",
+                                                                "type": "array",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "additionalItems": true,
+                                                                "items": {
+                                                                    "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/availability_zones/properties/constant_value/items",
+                                                                    "anyOf": [
+                                                                        {
+                                                                            "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/availability_zones/properties/constant_value/items/anyOf/0",
+                                                                            "type": "string",
+                                                                            "title": "The first anyOf schema",
+                                                                            "description": "An explanation about the purpose of this instance."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "desired_capacity": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/desired_capacity",
+                                                        "type": "object",
+                                                        "title": "The desired_capacity schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/desired_capacity/properties/constant_value",
+                                                                "type": "integer",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "force_delete": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/force_delete",
+                                                        "type": "object",
+                                                        "title": "The force_delete schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/force_delete/properties/constant_value",
+                                                                "type": "boolean",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "health_check_grace_period": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/health_check_grace_period",
+                                                        "type": "object",
+                                                        "title": "The health_check_grace_period schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/health_check_grace_period/properties/constant_value",
+                                                                "type": "integer",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "health_check_type": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/health_check_type",
+                                                        "type": "object",
+                                                        "title": "The health_check_type schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/health_check_type/properties/constant_value",
+                                                                "type": "string",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "launch_configuration": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/launch_configuration",
+                                                        "type": "object",
+                                                        "title": "The launch_configuration schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/launch_configuration/properties/constant_value",
+                                                                "type": "string",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "max_size": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/max_size",
+                                                        "type": "object",
+                                                        "title": "The max_size schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/max_size/properties/constant_value",
+                                                                "type": "integer",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "min_size": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/min_size",
+                                                        "type": "object",
+                                                        "title": "The min_size schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/min_size/properties/constant_value",
+                                                                "type": "integer",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    },
+                                                    "name": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/name",
+                                                        "type": "object",
+                                                        "title": "The name schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/expressions/properties/name/properties/constant_value",
+                                                                "type": "string",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance."
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    }
+                                                },
+                                                "additionalProperties": true
+                                            },
+                                            "schema_version": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/anyOf/0/properties/schema_version",
+                                                "type": "integer",
+                                                "title": "The schema_version schema",
+                                                "description": "An explanation about the purpose of this instance."
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
