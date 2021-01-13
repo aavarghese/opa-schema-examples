@@ -57,7 +57,7 @@ resources[resource_type] = all {
     some resource_type
     resource_types[resource_type]
     all := [name |
-        name:= input.resource_change[_]  // This line has a typo! It should be input.resource_changes
+        name:= input.resource_change[_]  # This line has a typo! It should be input.resource_changes
         name.type == resource_type
     ]
 }
