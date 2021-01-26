@@ -24,5 +24,5 @@ opa eval --format pretty data.kubernetes.admission.deny -i kubernetes/admission-
 ```
 
 ```
-opa evak --format pretty data.terraform.analysis.authz -i terraform/tf-plan.json -d terraform/terraform.rego -s terraform/tf-schema.json
+opa eval --format pretty data.terraform.analysis.authz -i terraform/tf-plan.json -d terraform/terraform.rego -s terraform/tf-schema.json
 ```
