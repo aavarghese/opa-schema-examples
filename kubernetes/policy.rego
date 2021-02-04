@@ -1,5 +1,6 @@
 package kubernetes.admission                                                
 
+#@rulesSchema=input.request.object:schemas/kubernetes/pod
 deny[msg] {                                                                
   input.request.kind.kinds == "Pod"                       # This line has a typo, should be input.request.kind.kind                      
   image := input.request.object.spec.containers[_].image                    

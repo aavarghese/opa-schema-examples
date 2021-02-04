@@ -22,7 +22,7 @@ is_token_valid {
 }
 
 action_allowed {
-  http_request.method == "GET"
+  http_request.typo.method == "GET"
   token.payload.role == "guest"
   glob.match("/people*", [], http_request.path)
 }
