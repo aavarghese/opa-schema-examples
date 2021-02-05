@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "alice": [
+                "read",
+                "write"
+            ],
+            "bob": [
+                "read"
+            ]
+        }
+    ],
+    "required": [
+        "alice",
+        "bob"
+    ],
+    "properties": {
+        "alice": {
+            "$id": "#/properties/alice",
+            "type": "array",
+            "title": "The alice schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "read",
+                    "write"
+                ]
+            ],
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/alice/items",
+                "type": "string",
+                "title": "The items schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    [
+                        "read",
+                        "write"
+                    ]
+                ]
+            }
+        },
+        "bob": {
+            "$id": "#/properties/bob",
+            "type": "array",
+            "title": "The bob schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "read"
+                ]
+            ],
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/bob/items",
+                "type": "string",
+                "title": "The items schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    [
+                        "read"
+                    ]
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
