@@ -1,0 +1,12 @@
+{
+    
+        "request": {
+            "operation": "READ",
+            "purpose": "CBA",
+            "asset": {
+                "namespace": "katalog-system",
+                "name": "data-csv"
+            }
+        }   
+    
+}

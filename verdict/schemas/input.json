@@ -1,0 +1,111 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "request": {
+                "operation": "READ",
+                "purpose": "CBA",
+                "asset": {
+                    "namespace": "katalog-system",
+                    "name": "data-csv"
+                }
+            }
+        }
+    ],
+    "required": [
+        "request"
+    ],
+    "properties": {
+        "request": {
+            "$id": "#/properties/request",
+            "type": "object",
+            "title": "The request schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "operation": "READ",
+                    "purpose": "CBA",
+                    "asset": {
+                        "namespace": "katalog-system",
+                        "name": "data-csv"
+                    }
+                }
+            ],
+            "required": [
+                "operation",
+                "purpose",
+                "asset"
+            ],
+            "properties": {
+                "operation": {
+                    "$id": "#/properties/request/properties/operation",
+                    "type": "string",
+                    "title": "The operation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "READ"
+                    ]
+                },
+                "purpose": {
+                    "$id": "#/properties/request/properties/purpose",
+                    "type": "string",
+                    "title": "The purpose schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "CBA"
+                    ]
+                },
+                "asset": {
+                    "$id": "#/properties/request/properties/asset",
+                    "type": "object",
+                    "title": "The asset schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "namespace": "katalog-system",
+                            "name": "data-csv"
+                        }
+                    ],
+                    "required": [
+                        "namespace",
+                        "name"
+                    ],
+                    "properties": {
+                        "namespace": {
+                            "$id": "#/properties/request/properties/asset/properties/namespace",
+                            "type": "string",
+                            "title": "The namespace schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "katalog-system"
+                            ]
+                        },
+                        "name": {
+                            "$id": "#/properties/request/properties/asset/properties/name",
+                            "type": "string",
+                            "title": "The name schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "data-csv"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
