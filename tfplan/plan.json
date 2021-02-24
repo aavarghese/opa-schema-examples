@@ -1,0 +1,339 @@
+{
+    "format_version": "0.1",
+    "terraform_version": "0.12.29",
+    "variables": {
+      "ibmcloud_api_key": {
+        "value": "9391YRhFOgfRk5SS8M6cb3OBgKtg-KeMtkh54JMKORIk"
+      },
+      "region": {
+        "value": "us-east"
+      },
+      "resource_group": {
+        "value": "Default"
+      }
+    },
+    "planned_values": {
+      "root_module": {
+        "resources": [
+          {
+            "address": "ibm_cis.cis_instance",
+            "mode": "managed",
+            "type": "ibm_cis",
+            "name": "cis_instance",
+            "provider_name": "ibm",
+            "schema_version": 0,
+            "values": {
+              "location": "global",
+              "name": "cis-tf",
+              "parameters": null,
+              "plan": "standard",
+              "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+              "tags": [
+                "dev",
+                "think2020"
+              ],
+              "timeouts": {
+                "create": "15m",
+                "delete": "15m",
+                "update": "15m"
+              }
+            }
+          },
+          {
+            "address": "ibm_cis_domain.cis_instance",
+            "mode": "managed",
+            "type": "ibm_cis_domain",
+            "name": "cis_instance",
+            "provider_name": "ibm",
+            "schema_version": 0,
+            "values": {
+              "domain": "demo.ibm.com"
+            }
+          },
+          {
+            "address": "ibm_cis_domain_settings.cis_instance",
+            "mode": "managed",
+            "type": "ibm_cis_domain_settings",
+            "name": "cis_instance",
+            "provider_name": "ibm",
+            "schema_version": 0,
+            "values": {
+              "min_tls_version": "1.2",
+              "ssl": "full",
+              "waf": "off"
+            }
+          }
+        ]
+      }
+    },
+    "resource_changes": [
+      {
+        "address": "ibm_cis.cis_instance",
+        "mode": "managed",
+        "type": "ibm_cis",
+        "name": "cis_instance",
+        "provider_name": "ibm",
+        "change": {
+          "actions": [
+            "create"
+          ],
+          "before": null,
+          "after": {
+            "location": "global",
+            "name": "cis-tf",
+            "parameters": null,
+            "plan": "standard",
+            "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+            "tags": [
+              "dev",
+              "think2020"
+            ],
+            "timeouts": {
+              "create": "15m",
+              "delete": "15m",
+              "update": "15m"
+            }
+          },
+          "after_unknown": {
+            "guid": true,
+            "id": true,
+            "resource_controller_url": true,
+            "resource_crn": true,
+            "resource_group_name": true,
+            "resource_name": true,
+            "resource_status": true,
+            "service": true,
+            "status": true,
+            "tags": [
+              false,
+              false
+            ],
+            "timeouts": {}
+          }
+        }
+      },
+      {
+        "address": "ibm_cis_domain.cis_instance",
+        "mode": "managed",
+        "type": "ibm_cis_domain",
+        "name": "cis_instance",
+        "provider_name": "ibm",
+        "change": {
+          "actions": [
+            "create"
+          ],
+          "before": null,
+          "after": {
+            "domain": "demo.ibm.com"
+          },
+          "after_unknown": {
+            "cis_id": true,
+            "id": true,
+            "name_servers": true,
+            "original_name_servers": true,
+            "paused": true,
+            "status": true
+          }
+        }
+      },
+      {
+        "address": "ibm_cis_domain_settings.cis_instance",
+        "mode": "managed",
+        "type": "ibm_cis_domain_settings",
+        "name": "cis_instance",
+        "provider_name": "ibm",
+        "change": {
+          "actions": [
+            "create"
+          ],
+          "before": null,
+          "after": {
+            "min_tls_version": "1.2",
+            "ssl": "full",
+            "waf": "off"
+          },
+          "after_unknown": {
+            "always_use_https": true,
+            "automatic_https_rewrites": true,
+            "brotli": true,
+            "browser_check": true,
+            "certificate_status": true,
+            "cis_id": true,
+            "cname_flattening": true,
+            "domain_id": true,
+            "hotlink_protection": true,
+            "http2": true,
+            "id": true,
+            "image_load_optimization": true,
+            "image_size_optimization": true,
+            "ip_geolocation": true,
+            "ipv6": true,
+            "opportunistic_encryption": true,
+            "origin_error_page_pass_thru": true,
+            "prefetch_preload": true,
+            "pseudo_ipv4": true,
+            "response_buffering": true,
+            "script_load_optimization": true,
+            "server_side_exclude": true,
+            "tls_client_auth": true,
+            "true_client_ip_header": true,
+            "websockets": true
+          }
+        }
+      }
+    ],
+    "prior_state": {
+      "format_version": "0.1",
+      "terraform_version": "0.12.29",
+      "values": {
+        "root_module": {
+          "resources": [
+            {
+              "address": "data.ibm_resource_group.group",
+              "mode": "data",
+              "type": "ibm_resource_group",
+              "name": "group",
+              "provider_name": "ibm",
+              "schema_version": 0,
+              "values": {
+                "id": "a975984c8bc64b6a8085982d54e88ff6",
+                "is_default": null,
+                "name": "Default"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "configuration": {
+      "provider_config": {
+        "ibm": {
+          "name": "ibm",
+          "expressions": {
+            "ibmcloud_api_key": {
+              "references": [
+                "var.ibmcloud_api_key"
+              ]
+            },
+            "region": {
+              "references": [
+                "var.region"
+              ]
+            }
+          }
+        }
+      },
+      "root_module": {
+        "resources": [
+          {
+            "address": "ibm_cis.cis_instance",
+            "mode": "managed",
+            "type": "ibm_cis",
+            "name": "cis_instance",
+            "provider_config_key": "ibm",
+            "expressions": {
+              "location": {
+                "constant_value": "global"
+              },
+              "name": {
+                "constant_value": "cis-tf"
+              },
+              "plan": {
+                "constant_value": "standard"
+              },
+              "resource_group_id": {
+                "references": [
+                  "data.ibm_resource_group.group"
+                ]
+              },
+              "tags": {
+                "constant_value": [
+                  "dev",
+                  "think2020"
+                ]
+              },
+              "timeouts": {
+                "create": {
+                  "constant_value": "15m"
+                },
+                "delete": {
+                  "constant_value": "15m"
+                },
+                "update": {
+                  "constant_value": "15m"
+                }
+              }
+            },
+            "schema_version": 0
+          },
+          {
+            "address": "ibm_cis_domain.cis_instance",
+            "mode": "managed",
+            "type": "ibm_cis_domain",
+            "name": "cis_instance",
+            "provider_config_key": "ibm",
+            "expressions": {
+              "cis_id": {
+                "references": [
+                  "ibm_cis.cis_instance"
+                ]
+              },
+              "domain": {
+                "constant_value": "demo.ibm.com"
+              }
+            },
+            "schema_version": 0
+          },
+          {
+            "address": "ibm_cis_domain_settings.cis_instance",
+            "mode": "managed",
+            "type": "ibm_cis_domain_settings",
+            "name": "cis_instance",
+            "provider_config_key": "ibm",
+            "expressions": {
+              "cis_id": {
+                "references": [
+                  "ibm_cis.cis_instance"
+                ]
+              },
+              "domain_id": {
+                "references": [
+                  "ibm_cis_domain.cis_instance"
+                ]
+              },
+              "min_tls_version": {
+                "constant_value": "1.2"
+              },
+              "ssl": {
+                "constant_value": "full"
+              },
+              "waf": {
+                "constant_value": "off"
+              }
+            },
+            "schema_version": 0
+          },
+          {
+            "address": "data.ibm_resource_group.group",
+            "mode": "data",
+            "type": "ibm_resource_group",
+            "name": "group",
+            "provider_config_key": "ibm",
+            "expressions": {
+              "name": {
+                "references": [
+                  "var.resource_group"
+                ]
+              }
+            },
+            "schema_version": 0
+          }
+        ],
+        "variables": {
+          "ibmcloud_api_key": {},
+          "region": {},
+          "resource_group": {}
+        }
+      }
+    }
+  }

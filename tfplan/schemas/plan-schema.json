@@ -1,0 +1,3089 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "format_version": "0.1",
+            "terraform_version": "0.12.29",
+            "variables": {
+                "ibmcloud_api_key": {
+                    "value": "9391YRhFOgfRk5SS8M6cb3OBgKtg-KeMtkh54JMKORIk"
+                },
+                "region": {
+                    "value": "us-east"
+                },
+                "resource_group": {
+                    "value": "Default"
+                }
+            },
+            "planned_values": {
+                "root_module": {
+                    "resources": [
+                        {
+                            "address": "ibm_cis.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis",
+                            "name": "cis_instance",
+                            "provider_name": "ibm",
+                            "schema_version": 0,
+                            "values": {
+                                "location": "global",
+                                "name": "cis-tf",
+                                "parameters": null,
+                                "plan": "standard",
+                                "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                "tags": [
+                                    "dev",
+                                    "think2020"
+                                ],
+                                "timeouts": {
+                                    "create": "15m",
+                                    "delete": "15m",
+                                    "update": "15m"
+                                }
+                            }
+                        },
+                        {
+                            "address": "ibm_cis_domain.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis_domain",
+                            "name": "cis_instance",
+                            "provider_name": "ibm",
+                            "schema_version": 0,
+                            "values": {
+                                "domain": "demo.ibm.com"
+                            }
+                        },
+                        {
+                            "address": "ibm_cis_domain_settings.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis_domain_settings",
+                            "name": "cis_instance",
+                            "provider_name": "ibm",
+                            "schema_version": 0,
+                            "values": {
+                                "min_tls_version": "1.2",
+                                "ssl": "full",
+                                "waf": "off"
+                            }
+                        }
+                    ]
+                }
+            },
+            "resource_changes": [
+                {
+                    "address": "ibm_cis.cis_instance",
+                    "mode": "managed",
+                    "type": "ibm_cis",
+                    "name": "cis_instance",
+                    "provider_name": "ibm",
+                    "change": {
+                        "actions": [
+                            "create"
+                        ],
+                        "before": null,
+                        "after": {
+                            "location": "global",
+                            "name": "cis-tf",
+                            "parameters": null,
+                            "plan": "standard",
+                            "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                            "tags": [
+                                "dev",
+                                "think2020"
+                            ],
+                            "timeouts": {
+                                "create": "15m",
+                                "delete": "15m",
+                                "update": "15m"
+                            }
+                        },
+                        "after_unknown": {
+                            "guid": true,
+                            "id": true,
+                            "resource_controller_url": true,
+                            "resource_crn": true,
+                            "resource_group_name": true,
+                            "resource_name": true,
+                            "resource_status": true,
+                            "service": true,
+                            "status": true,
+                            "tags": [
+                                false,
+                                false
+                            ],
+                            "timeouts": {}
+                        }
+                    }
+                },
+                {
+                    "address": "ibm_cis_domain.cis_instance",
+                    "mode": "managed",
+                    "type": "ibm_cis_domain",
+                    "name": "cis_instance",
+                    "provider_name": "ibm",
+                    "change": {
+                        "actions": [
+                            "create"
+                        ],
+                        "before": null,
+                        "after": {
+                            "domain": "demo.ibm.com"
+                        },
+                        "after_unknown": {
+                            "cis_id": true,
+                            "id": true,
+                            "name_servers": true,
+                            "original_name_servers": true,
+                            "paused": true,
+                            "status": true
+                        }
+                    }
+                },
+                {
+                    "address": "ibm_cis_domain_settings.cis_instance",
+                    "mode": "managed",
+                    "type": "ibm_cis_domain_settings",
+                    "name": "cis_instance",
+                    "provider_name": "ibm",
+                    "change": {
+                        "actions": [
+                            "create"
+                        ],
+                        "before": null,
+                        "after": {
+                            "min_tls_version": "1.2",
+                            "ssl": "full",
+                            "waf": "off"
+                        },
+                        "after_unknown": {
+                            "always_use_https": true,
+                            "automatic_https_rewrites": true,
+                            "brotli": true,
+                            "browser_check": true,
+                            "certificate_status": true,
+                            "cis_id": true,
+                            "cname_flattening": true,
+                            "domain_id": true,
+                            "hotlink_protection": true,
+                            "http2": true,
+                            "id": true,
+                            "image_load_optimization": true,
+                            "image_size_optimization": true,
+                            "ip_geolocation": true,
+                            "ipv6": true,
+                            "opportunistic_encryption": true,
+                            "origin_error_page_pass_thru": true,
+                            "prefetch_preload": true,
+                            "pseudo_ipv4": true,
+                            "response_buffering": true,
+                            "script_load_optimization": true,
+                            "server_side_exclude": true,
+                            "tls_client_auth": true,
+                            "true_client_ip_header": true,
+                            "websockets": true
+                        }
+                    }
+                }
+            ],
+            "prior_state": {
+                "format_version": "0.1",
+                "terraform_version": "0.12.29",
+                "values": {
+                    "root_module": {
+                        "resources": [
+                            {
+                                "address": "data.ibm_resource_group.group",
+                                "mode": "data",
+                                "type": "ibm_resource_group",
+                                "name": "group",
+                                "provider_name": "ibm",
+                                "schema_version": 0,
+                                "values": {
+                                    "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                    "is_default": null,
+                                    "name": "Default"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "configuration": {
+                "provider_config": {
+                    "ibm": {
+                        "name": "ibm",
+                        "expressions": {
+                            "ibmcloud_api_key": {
+                                "references": [
+                                    "var.ibmcloud_api_key"
+                                ]
+                            },
+                            "region": {
+                                "references": [
+                                    "var.region"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "root_module": {
+                    "resources": [
+                        {
+                            "address": "ibm_cis.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis",
+                            "name": "cis_instance",
+                            "provider_config_key": "ibm",
+                            "expressions": {
+                                "location": {
+                                    "constant_value": "global"
+                                },
+                                "name": {
+                                    "constant_value": "cis-tf"
+                                },
+                                "plan": {
+                                    "constant_value": "standard"
+                                },
+                                "resource_group_id": {
+                                    "references": [
+                                        "data.ibm_resource_group.group"
+                                    ]
+                                },
+                                "tags": {
+                                    "constant_value": [
+                                        "dev",
+                                        "think2020"
+                                    ]
+                                },
+                                "timeouts": {
+                                    "create": {
+                                        "constant_value": "15m"
+                                    },
+                                    "delete": {
+                                        "constant_value": "15m"
+                                    },
+                                    "update": {
+                                        "constant_value": "15m"
+                                    }
+                                }
+                            },
+                            "schema_version": 0
+                        },
+                        {
+                            "address": "ibm_cis_domain.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis_domain",
+                            "name": "cis_instance",
+                            "provider_config_key": "ibm",
+                            "expressions": {
+                                "cis_id": {
+                                    "references": [
+                                        "ibm_cis.cis_instance"
+                                    ]
+                                },
+                                "domain": {
+                                    "constant_value": "demo.ibm.com"
+                                }
+                            },
+                            "schema_version": 0
+                        },
+                        {
+                            "address": "ibm_cis_domain_settings.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis_domain_settings",
+                            "name": "cis_instance",
+                            "provider_config_key": "ibm",
+                            "expressions": {
+                                "cis_id": {
+                                    "references": [
+                                        "ibm_cis.cis_instance"
+                                    ]
+                                },
+                                "domain_id": {
+                                    "references": [
+                                        "ibm_cis_domain.cis_instance"
+                                    ]
+                                },
+                                "min_tls_version": {
+                                    "constant_value": "1.2"
+                                },
+                                "ssl": {
+                                    "constant_value": "full"
+                                },
+                                "waf": {
+                                    "constant_value": "off"
+                                }
+                            },
+                            "schema_version": 0
+                        },
+                        {
+                            "address": "data.ibm_resource_group.group",
+                            "mode": "data",
+                            "type": "ibm_resource_group",
+                            "name": "group",
+                            "provider_config_key": "ibm",
+                            "expressions": {
+                                "name": {
+                                    "references": [
+                                        "var.resource_group"
+                                    ]
+                                }
+                            },
+                            "schema_version": 0
+                        }
+                    ],
+                    "variables": {
+                        "ibmcloud_api_key": {},
+                        "region": {},
+                        "resource_group": {}
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+        "format_version",
+        "terraform_version",
+        "variables",
+        "planned_values",
+        "resource_changes",
+        "prior_state",
+        "configuration"
+    ],
+    "properties": {
+        "format_version": {
+            "$id": "#/properties/format_version",
+            "type": "string",
+            "title": "The format_version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "0.1"
+            ]
+        },
+        "terraform_version": {
+            "$id": "#/properties/terraform_version",
+            "type": "string",
+            "title": "The terraform_version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "0.12.29"
+            ]
+        },
+        "variables": {
+            "$id": "#/properties/variables",
+            "type": "object",
+            "title": "The variables schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "ibmcloud_api_key": {
+                        "value": "9391YRhFOgfRk5SS8M6cb3OBgKtg-KeMtkh54JMKORIk"
+                    },
+                    "region": {
+                        "value": "us-east"
+                    },
+                    "resource_group": {
+                        "value": "Default"
+                    }
+                }
+            ],
+            "required": [
+                "ibmcloud_api_key",
+                "region",
+                "resource_group"
+            ],
+            "properties": {
+                "ibmcloud_api_key": {
+                    "$id": "#/properties/variables/properties/ibmcloud_api_key",
+                    "type": "object",
+                    "title": "The ibmcloud_api_key schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "value": "9391YRhFOgfRk5SS8M6cb3OBgKtg-KeMtkh54JMKORIk"
+                        }
+                    ],
+                    "required": [
+                        "value"
+                    ],
+                    "properties": {
+                        "value": {
+                            "$id": "#/properties/variables/properties/ibmcloud_api_key/properties/value",
+                            "type": "string",
+                            "title": "The value schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "9391YRhFOgfRk5SS8M6cb3OBgKtg-KeMtkh54JMKORIk"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "region": {
+                    "$id": "#/properties/variables/properties/region",
+                    "type": "object",
+                    "title": "The region schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "value": "us-east"
+                        }
+                    ],
+                    "required": [
+                        "value"
+                    ],
+                    "properties": {
+                        "value": {
+                            "$id": "#/properties/variables/properties/region/properties/value",
+                            "type": "string",
+                            "title": "The value schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "us-east"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "resource_group": {
+                    "$id": "#/properties/variables/properties/resource_group",
+                    "type": "object",
+                    "title": "The resource_group schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "value": "Default"
+                        }
+                    ],
+                    "required": [
+                        "value"
+                    ],
+                    "properties": {
+                        "value": {
+                            "$id": "#/properties/variables/properties/resource_group/properties/value",
+                            "type": "string",
+                            "title": "The value schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Default"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "planned_values": {
+            "$id": "#/properties/planned_values",
+            "type": "object",
+            "title": "The planned_values schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "root_module": {
+                        "resources": [
+                            {
+                                "address": "ibm_cis.cis_instance",
+                                "mode": "managed",
+                                "type": "ibm_cis",
+                                "name": "cis_instance",
+                                "provider_name": "ibm",
+                                "schema_version": 0,
+                                "values": {
+                                    "location": "global",
+                                    "name": "cis-tf",
+                                    "parameters": null,
+                                    "plan": "standard",
+                                    "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                    "tags": [
+                                        "dev",
+                                        "think2020"
+                                    ],
+                                    "timeouts": {
+                                        "create": "15m",
+                                        "delete": "15m",
+                                        "update": "15m"
+                                    }
+                                }
+                            },
+                            {
+                                "address": "ibm_cis_domain.cis_instance",
+                                "mode": "managed",
+                                "type": "ibm_cis_domain",
+                                "name": "cis_instance",
+                                "provider_name": "ibm",
+                                "schema_version": 0,
+                                "values": {
+                                    "domain": "demo.ibm.com"
+                                }
+                            },
+                            {
+                                "address": "ibm_cis_domain_settings.cis_instance",
+                                "mode": "managed",
+                                "type": "ibm_cis_domain_settings",
+                                "name": "cis_instance",
+                                "provider_name": "ibm",
+                                "schema_version": 0,
+                                "values": {
+                                    "min_tls_version": "1.2",
+                                    "ssl": "full",
+                                    "waf": "off"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "root_module"
+            ],
+            "properties": {
+                "root_module": {
+                    "$id": "#/properties/planned_values/properties/root_module",
+                    "type": "object",
+                    "title": "The root_module schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "resources": [
+                                {
+                                    "address": "ibm_cis.cis_instance",
+                                    "mode": "managed",
+                                    "type": "ibm_cis",
+                                    "name": "cis_instance",
+                                    "provider_name": "ibm",
+                                    "schema_version": 0,
+                                    "values": {
+                                        "location": "global",
+                                        "name": "cis-tf",
+                                        "parameters": null,
+                                        "plan": "standard",
+                                        "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                        "tags": [
+                                            "dev",
+                                            "think2020"
+                                        ],
+                                        "timeouts": {
+                                            "create": "15m",
+                                            "delete": "15m",
+                                            "update": "15m"
+                                        }
+                                    }
+                                },
+                                {
+                                    "address": "ibm_cis_domain.cis_instance",
+                                    "mode": "managed",
+                                    "type": "ibm_cis_domain",
+                                    "name": "cis_instance",
+                                    "provider_name": "ibm",
+                                    "schema_version": 0,
+                                    "values": {
+                                        "domain": "demo.ibm.com"
+                                    }
+                                },
+                                {
+                                    "address": "ibm_cis_domain_settings.cis_instance",
+                                    "mode": "managed",
+                                    "type": "ibm_cis_domain_settings",
+                                    "name": "cis_instance",
+                                    "provider_name": "ibm",
+                                    "schema_version": 0,
+                                    "values": {
+                                        "min_tls_version": "1.2",
+                                        "ssl": "full",
+                                        "waf": "off"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "resources"
+                    ],
+                    "properties": {
+                        "resources": {
+                            "$id": "#/properties/planned_values/properties/root_module/properties/resources",
+                            "type": "array",
+                            "title": "The resources schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "address": "ibm_cis.cis_instance",
+                                        "mode": "managed",
+                                        "type": "ibm_cis",
+                                        "name": "cis_instance",
+                                        "provider_name": "ibm",
+                                        "schema_version": 0,
+                                        "values": {
+                                            "location": "global",
+                                            "name": "cis-tf",
+                                            "parameters": null,
+                                            "plan": "standard",
+                                            "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                            "tags": [
+                                                "dev",
+                                                "think2020"
+                                            ],
+                                            "timeouts": {
+                                                "create": "15m",
+                                                "delete": "15m",
+                                                "update": "15m"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "address": "ibm_cis_domain.cis_instance",
+                                        "mode": "managed",
+                                        "type": "ibm_cis_domain",
+                                        "name": "cis_instance",
+                                        "provider_name": "ibm",
+                                        "schema_version": 0,
+                                        "values": {
+                                            "domain": "demo.ibm.com"
+                                        }
+                                    }
+                                ]
+                            ],
+                            "additionalItems": false,
+                            "items": {
+                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items",
+                                "type": "object",
+                                "title": "The items schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    [
+                                        {
+                                            "address": "ibm_cis.cis_instance",
+                                            "mode": "managed",
+                                            "type": "ibm_cis",
+                                            "name": "cis_instance",
+                                            "provider_name": "ibm",
+                                            "schema_version": 0,
+                                            "values": {
+                                                "location": "global",
+                                                "name": "cis-tf",
+                                                "parameters": null,
+                                                "plan": "standard",
+                                                "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                                "tags": [
+                                                    "dev",
+                                                    "think2020"
+                                                ],
+                                                "timeouts": {
+                                                    "create": "15m",
+                                                    "delete": "15m",
+                                                    "update": "15m"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "address": "ibm_cis_domain.cis_instance",
+                                            "mode": "managed",
+                                            "type": "ibm_cis_domain",
+                                            "name": "cis_instance",
+                                            "provider_name": "ibm",
+                                            "schema_version": 0,
+                                            "values": {
+                                                "domain": "demo.ibm.com"
+                                            }
+                                        },
+                                        {
+                                            "address": "ibm_cis_domain_settings.cis_instance",
+                                            "mode": "managed",
+                                            "type": "ibm_cis_domain_settings",
+                                            "name": "cis_instance",
+                                            "provider_name": "ibm",
+                                            "schema_version": 0,
+                                            "values": {
+                                                "min_tls_version": "1.2",
+                                                "ssl": "full",
+                                                "waf": "off"
+                                            }
+                                        }
+                                    ]
+                                ],
+                                "required": [
+                                    "address",
+                                    "mode",
+                                    "type",
+                                    "name",
+                                    "provider_name",
+                                    "schema_version",
+                                    "values"
+                                ],
+                                "properties": {
+                                    "address": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/address",
+                                        "type": "string",
+                                        "title": "The address schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ibm_cis.cis_instance"
+                                        ]
+                                    },
+                                    "mode": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/mode",
+                                        "type": "string",
+                                        "title": "The mode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "managed"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/type",
+                                        "type": "string",
+                                        "title": "The type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ibm_cis"
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "cis_instance"
+                                        ]
+                                    },
+                                    "provider_name": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/provider_name",
+                                        "type": "string",
+                                        "title": "The provider_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ibm"
+                                        ]
+                                    },
+                                    "schema_version": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/schema_version",
+                                        "type": "integer",
+                                        "title": "The schema_version schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    },
+                                    "values": {
+                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values",
+                                        "type": "object",
+                                        "title": "The values schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "location": "global",
+                                                "name": "cis-tf",
+                                                "parameters": null,
+                                                "plan": "standard",
+                                                "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                                "tags": [
+                                                    "dev",
+                                                    "think2020"
+                                                ],
+                                                "timeouts": {
+                                                    "create": "15m",
+                                                    "delete": "15m",
+                                                    "update": "15m"
+                                                }
+                                            }
+                                        ],
+                                        "required": [
+                                            "location",
+                                            "name",
+                                            "parameters",
+                                            "plan",
+                                            "resource_group_id",
+                                            "tags",
+                                            "timeouts"
+                                        ],
+                                        "properties": {
+                                            "location": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/location",
+                                                "type": "string",
+                                                "title": "The location schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "global"
+                                                ]
+                                            },
+                                            "name": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/name",
+                                                "type": "string",
+                                                "title": "The name schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "cis-tf"
+                                                ]
+                                            },
+                                            "parameters": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/parameters",
+                                                "type": "null",
+                                                "title": "The parameters schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": null,
+                                                "examples": [
+                                                    null
+                                                ]
+                                            },
+                                            "plan": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/plan",
+                                                "type": "string",
+                                                "title": "The plan schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "standard"
+                                                ]
+                                            },
+                                            "resource_group_id": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/resource_group_id",
+                                                "type": "string",
+                                                "title": "The resource_group_id schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "a975984c8bc64b6a8085982d54e88ff6"
+                                                ]
+                                            },
+                                            "tags": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/tags",
+                                                "type": "array",
+                                                "title": "The tags schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": [],
+                                                "examples": [
+                                                    [
+                                                        "dev",
+                                                        "think2020"
+                                                    ]
+                                                ],
+                                                "additionalItems": false,
+                                                "items": {
+                                                    "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/tags/items",
+                                                    "type": "string",
+                                                    "title": "The items schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        [
+                                                            "dev",
+                                                            "think2020"
+                                                        ]
+                                                    ]
+                                                }
+                                            },
+                                            "timeouts": {
+                                                "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/timeouts",
+                                                "type": "object",
+                                                "title": "The timeouts schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "create": "15m",
+                                                        "delete": "15m",
+                                                        "update": "15m"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "create",
+                                                    "delete",
+                                                    "update"
+                                                ],
+                                                "properties": {
+                                                    "create": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/timeouts/properties/create",
+                                                        "type": "string",
+                                                        "title": "The create schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "15m"
+                                                        ]
+                                                    },
+                                                    "delete": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/timeouts/properties/delete",
+                                                        "type": "string",
+                                                        "title": "The delete schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "15m"
+                                                        ]
+                                                    },
+                                                    "update": {
+                                                        "$id": "#/properties/planned_values/properties/root_module/properties/resources/items/properties/values/properties/timeouts/properties/update",
+                                                        "type": "string",
+                                                        "title": "The update schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "15m"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "resource_changes": {
+            "$id": "#/properties/resource_changes",
+            "type": "array",
+            "title": "The resource_changes schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "address": "ibm_cis.cis_instance",
+                        "mode": "managed",
+                        "type": "ibm_cis",
+                        "name": "cis_instance",
+                        "provider_name": "ibm",
+                        "change": {
+                            "actions": [
+                                "create"
+                            ],
+                            "before": null,
+                            "after": {
+                                "location": "global",
+                                "name": "cis-tf",
+                                "parameters": null,
+                                "plan": "standard",
+                                "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                "tags": [
+                                    "dev",
+                                    "think2020"
+                                ],
+                                "timeouts": {
+                                    "create": "15m",
+                                    "delete": "15m",
+                                    "update": "15m"
+                                }
+                            },
+                            "after_unknown": {
+                                "guid": true,
+                                "id": true,
+                                "resource_controller_url": true,
+                                "resource_crn": true,
+                                "resource_group_name": true,
+                                "resource_name": true,
+                                "resource_status": true,
+                                "service": true,
+                                "status": true,
+                                "tags": [
+                                    false,
+                                    false
+                                ],
+                                "timeouts": {}
+                            }
+                        }
+                    },
+                    {
+                        "address": "ibm_cis_domain.cis_instance",
+                        "mode": "managed",
+                        "type": "ibm_cis_domain",
+                        "name": "cis_instance",
+                        "provider_name": "ibm",
+                        "change": {
+                            "actions": [
+                                "create"
+                            ],
+                            "before": null,
+                            "after": {
+                                "domain": "demo.ibm.com"
+                            },
+                            "after_unknown": {
+                                "cis_id": true,
+                                "id": true,
+                                "name_servers": true,
+                                "original_name_servers": true,
+                                "paused": true,
+                                "status": true
+                            }
+                        }
+                    }
+                ]
+            ],
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/resource_changes/items",
+                "type": "object",
+                "title": "The items schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    [
+                        {
+                            "address": "ibm_cis.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis",
+                            "name": "cis_instance",
+                            "provider_name": "ibm",
+                            "change": {
+                                "actions": [
+                                    "create"
+                                ],
+                                "before": null,
+                                "after": {
+                                    "location": "global",
+                                    "name": "cis-tf",
+                                    "parameters": null,
+                                    "plan": "standard",
+                                    "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                    "tags": [
+                                        "dev",
+                                        "think2020"
+                                    ],
+                                    "timeouts": {
+                                        "create": "15m",
+                                        "delete": "15m",
+                                        "update": "15m"
+                                    }
+                                },
+                                "after_unknown": {
+                                    "guid": true,
+                                    "id": true,
+                                    "resource_controller_url": true,
+                                    "resource_crn": true,
+                                    "resource_group_name": true,
+                                    "resource_name": true,
+                                    "resource_status": true,
+                                    "service": true,
+                                    "status": true,
+                                    "tags": [
+                                        false,
+                                        false
+                                    ],
+                                    "timeouts": {}
+                                }
+                            }
+                        },
+                        {
+                            "address": "ibm_cis_domain.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis_domain",
+                            "name": "cis_instance",
+                            "provider_name": "ibm",
+                            "change": {
+                                "actions": [
+                                    "create"
+                                ],
+                                "before": null,
+                                "after": {
+                                    "domain": "demo.ibm.com"
+                                },
+                                "after_unknown": {
+                                    "cis_id": true,
+                                    "id": true,
+                                    "name_servers": true,
+                                    "original_name_servers": true,
+                                    "paused": true,
+                                    "status": true
+                                }
+                            }
+                        },
+                        {
+                            "address": "ibm_cis_domain_settings.cis_instance",
+                            "mode": "managed",
+                            "type": "ibm_cis_domain_settings",
+                            "name": "cis_instance",
+                            "provider_name": "ibm",
+                            "change": {
+                                "actions": [
+                                    "create"
+                                ],
+                                "before": null,
+                                "after": {
+                                    "min_tls_version": "1.2",
+                                    "ssl": "full",
+                                    "waf": "off"
+                                },
+                                "after_unknown": {
+                                    "always_use_https": true,
+                                    "automatic_https_rewrites": true,
+                                    "brotli": true,
+                                    "browser_check": true,
+                                    "certificate_status": true,
+                                    "cis_id": true,
+                                    "cname_flattening": true,
+                                    "domain_id": true,
+                                    "hotlink_protection": true,
+                                    "http2": true,
+                                    "id": true,
+                                    "image_load_optimization": true,
+                                    "image_size_optimization": true,
+                                    "ip_geolocation": true,
+                                    "ipv6": true,
+                                    "opportunistic_encryption": true,
+                                    "origin_error_page_pass_thru": true,
+                                    "prefetch_preload": true,
+                                    "pseudo_ipv4": true,
+                                    "response_buffering": true,
+                                    "script_load_optimization": true,
+                                    "server_side_exclude": true,
+                                    "tls_client_auth": true,
+                                    "true_client_ip_header": true,
+                                    "websockets": true
+                                }
+                            }
+                        }
+                    ]
+                ],
+                "required": [
+                    "address",
+                    "mode",
+                    "type",
+                    "name",
+                    "provider_name",
+                    "change"
+                ],
+                "properties": {
+                    "address": {
+                        "$id": "#/properties/resource_changes/items/properties/address",
+                        "type": "string",
+                        "title": "The address schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "ibm_cis.cis_instance"
+                        ]
+                    },
+                    "mode": {
+                        "$id": "#/properties/resource_changes/items/properties/mode",
+                        "type": "string",
+                        "title": "The mode schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "managed"
+                        ]
+                    },
+                    "type": {
+                        "$id": "#/properties/resource_changes/items/properties/type",
+                        "type": "string",
+                        "title": "The type schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "ibm_cis"
+                        ]
+                    },
+                    "name": {
+                        "$id": "#/properties/resource_changes/items/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "cis_instance"
+                        ]
+                    },
+                    "provider_name": {
+                        "$id": "#/properties/resource_changes/items/properties/provider_name",
+                        "type": "string",
+                        "title": "The provider_name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "ibm"
+                        ]
+                    },
+                    "change": {
+                        "$id": "#/properties/resource_changes/items/properties/change",
+                        "type": "object",
+                        "title": "The change schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "actions": [
+                                    "create"
+                                ],
+                                "before": null,
+                                "after": {
+                                    "location": "global",
+                                    "name": "cis-tf",
+                                    "parameters": null,
+                                    "plan": "standard",
+                                    "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                    "tags": [
+                                        "dev",
+                                        "think2020"
+                                    ],
+                                    "timeouts": {
+                                        "create": "15m",
+                                        "delete": "15m",
+                                        "update": "15m"
+                                    }
+                                },
+                                "after_unknown": {
+                                    "guid": true,
+                                    "id": true,
+                                    "resource_controller_url": true,
+                                    "resource_crn": true,
+                                    "resource_group_name": true,
+                                    "resource_name": true,
+                                    "resource_status": true,
+                                    "service": true,
+                                    "status": true,
+                                    "tags": [
+                                        false,
+                                        false
+                                    ],
+                                    "timeouts": {}
+                                }
+                            }
+                        ],
+                        "required": [
+                            "actions",
+                            "before",
+                            "after",
+                            "after_unknown"
+                        ],
+                        "properties": {
+                            "actions": {
+                                "$id": "#/properties/resource_changes/items/properties/change/properties/actions",
+                                "type": "array",
+                                "title": "The actions schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        "create"
+                                    ]
+                                ],
+                                "additionalItems": false,
+                                "items": {
+                                    "$id": "#/properties/resource_changes/items/properties/change/properties/actions/items",
+                                    "type": "string",
+                                    "title": "The items schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        [
+                                            "create"
+                                        ]
+                                    ]
+                                }
+                            },
+                            "before": {
+                                "$id": "#/properties/resource_changes/items/properties/change/properties/before",
+                                "type": "null",
+                                "title": "The before schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "after": {
+                                "$id": "#/properties/resource_changes/items/properties/change/properties/after",
+                                "type": "object",
+                                "title": "The after schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "location": "global",
+                                        "name": "cis-tf",
+                                        "parameters": null,
+                                        "plan": "standard",
+                                        "resource_group_id": "a975984c8bc64b6a8085982d54e88ff6",
+                                        "tags": [
+                                            "dev",
+                                            "think2020"
+                                        ],
+                                        "timeouts": {
+                                            "create": "15m",
+                                            "delete": "15m",
+                                            "update": "15m"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "location",
+                                    "name",
+                                    "parameters",
+                                    "plan",
+                                    "resource_group_id",
+                                    "tags",
+                                    "timeouts"
+                                ],
+                                "properties": {
+                                    "location": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/location",
+                                        "type": "string",
+                                        "title": "The location schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "global"
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "cis-tf"
+                                        ]
+                                    },
+                                    "parameters": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/parameters",
+                                        "type": "null",
+                                        "title": "The parameters schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "plan": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/plan",
+                                        "type": "string",
+                                        "title": "The plan schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "standard"
+                                        ]
+                                    },
+                                    "resource_group_id": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/resource_group_id",
+                                        "type": "string",
+                                        "title": "The resource_group_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "a975984c8bc64b6a8085982d54e88ff6"
+                                        ]
+                                    },
+                                    "tags": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/tags",
+                                        "type": "array",
+                                        "title": "The tags schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                "dev",
+                                                "think2020"
+                                            ]
+                                        ],
+                                        "additionalItems": false,
+                                        "items": {
+                                            "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/tags/items",
+                                            "type": "string",
+                                            "title": "The items schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                [
+                                                    "dev",
+                                                    "think2020"
+                                                ]
+                                            ]
+                                        }
+                                    },
+                                    "timeouts": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/timeouts",
+                                        "type": "object",
+                                        "title": "The timeouts schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "create": "15m",
+                                                "delete": "15m",
+                                                "update": "15m"
+                                            }
+                                        ],
+                                        "required": [
+                                            "create",
+                                            "delete",
+                                            "update"
+                                        ],
+                                        "properties": {
+                                            "create": {
+                                                "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/timeouts/properties/create",
+                                                "type": "string",
+                                                "title": "The create schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "15m"
+                                                ]
+                                            },
+                                            "delete": {
+                                                "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/timeouts/properties/delete",
+                                                "type": "string",
+                                                "title": "The delete schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "15m"
+                                                ]
+                                            },
+                                            "update": {
+                                                "$id": "#/properties/resource_changes/items/properties/change/properties/after/properties/timeouts/properties/update",
+                                                "type": "string",
+                                                "title": "The update schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "15m"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "additionalProperties": false
+                            },
+                            "after_unknown": {
+                                "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown",
+                                "type": "object",
+                                "title": "The after_unknown schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "guid": true,
+                                        "id": true,
+                                        "resource_controller_url": true,
+                                        "resource_crn": true,
+                                        "resource_group_name": true,
+                                        "resource_name": true,
+                                        "resource_status": true,
+                                        "service": true,
+                                        "status": true,
+                                        "tags": [
+                                            false,
+                                            false
+                                        ],
+                                        "timeouts": {}
+                                    }
+                                ],
+                                "required": [
+                                    "guid",
+                                    "id",
+                                    "resource_controller_url",
+                                    "resource_crn",
+                                    "resource_group_name",
+                                    "resource_name",
+                                    "resource_status",
+                                    "service",
+                                    "status",
+                                    "tags",
+                                    "timeouts"
+                                ],
+                                "properties": {
+                                    "guid": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/guid",
+                                        "type": "boolean",
+                                        "title": "The guid schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "id": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/id",
+                                        "type": "boolean",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "resource_controller_url": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/resource_controller_url",
+                                        "type": "boolean",
+                                        "title": "The resource_controller_url schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "resource_crn": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/resource_crn",
+                                        "type": "boolean",
+                                        "title": "The resource_crn schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "resource_group_name": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/resource_group_name",
+                                        "type": "boolean",
+                                        "title": "The resource_group_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "resource_name": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/resource_name",
+                                        "type": "boolean",
+                                        "title": "The resource_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "resource_status": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/resource_status",
+                                        "type": "boolean",
+                                        "title": "The resource_status schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "service": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/service",
+                                        "type": "boolean",
+                                        "title": "The service schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "status": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/status",
+                                        "type": "boolean",
+                                        "title": "The status schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "tags": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/tags",
+                                        "type": "array",
+                                        "title": "The tags schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                false,
+                                                false
+                                            ]
+                                        ],
+                                        "additionalItems": false,
+                                        "items": {
+                                            "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/tags/items",
+                                            "type": "boolean",
+                                            "title": "The items schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": false,
+                                            "examples": [
+                                                [
+                                                    false,
+                                                    false
+                                                ]
+                                            ]
+                                        }
+                                    },
+                                    "timeouts": {
+                                        "$id": "#/properties/resource_changes/items/properties/change/properties/after_unknown/properties/timeouts",
+                                        "type": "object",
+                                        "title": "The timeouts schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {}
+                                        ],
+                                        "required": [],
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "prior_state": {
+            "$id": "#/properties/prior_state",
+            "type": "object",
+            "title": "The prior_state schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "format_version": "0.1",
+                    "terraform_version": "0.12.29",
+                    "values": {
+                        "root_module": {
+                            "resources": [
+                                {
+                                    "address": "data.ibm_resource_group.group",
+                                    "mode": "data",
+                                    "type": "ibm_resource_group",
+                                    "name": "group",
+                                    "provider_name": "ibm",
+                                    "schema_version": 0,
+                                    "values": {
+                                        "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                        "is_default": null,
+                                        "name": "Default"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "format_version",
+                "terraform_version",
+                "values"
+            ],
+            "properties": {
+                "format_version": {
+                    "$id": "#/properties/prior_state/properties/format_version",
+                    "type": "string",
+                    "title": "The format_version schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "0.1"
+                    ]
+                },
+                "terraform_version": {
+                    "$id": "#/properties/prior_state/properties/terraform_version",
+                    "type": "string",
+                    "title": "The terraform_version schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "0.12.29"
+                    ]
+                },
+                "values": {
+                    "$id": "#/properties/prior_state/properties/values",
+                    "type": "object",
+                    "title": "The values schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "root_module": {
+                                "resources": [
+                                    {
+                                        "address": "data.ibm_resource_group.group",
+                                        "mode": "data",
+                                        "type": "ibm_resource_group",
+                                        "name": "group",
+                                        "provider_name": "ibm",
+                                        "schema_version": 0,
+                                        "values": {
+                                            "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                            "is_default": null,
+                                            "name": "Default"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "required": [
+                        "root_module"
+                    ],
+                    "properties": {
+                        "root_module": {
+                            "$id": "#/properties/prior_state/properties/values/properties/root_module",
+                            "type": "object",
+                            "title": "The root_module schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "resources": [
+                                        {
+                                            "address": "data.ibm_resource_group.group",
+                                            "mode": "data",
+                                            "type": "ibm_resource_group",
+                                            "name": "group",
+                                            "provider_name": "ibm",
+                                            "schema_version": 0,
+                                            "values": {
+                                                "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                                "is_default": null,
+                                                "name": "Default"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "required": [
+                                "resources"
+                            ],
+                            "properties": {
+                                "resources": {
+                                    "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources",
+                                    "type": "array",
+                                    "title": "The resources schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": [],
+                                    "examples": [
+                                        [
+                                            {
+                                                "address": "data.ibm_resource_group.group",
+                                                "mode": "data",
+                                                "type": "ibm_resource_group",
+                                                "name": "group",
+                                                "provider_name": "ibm",
+                                                "schema_version": 0,
+                                                "values": {
+                                                    "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                                    "is_default": null,
+                                                    "name": "Default"
+                                                }
+                                            }
+                                        ]
+                                    ],
+                                    "additionalItems": false,
+                                    "items": {
+                                        "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items",
+                                        "type": "object",
+                                        "title": "The items schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            [
+                                                {
+                                                    "address": "data.ibm_resource_group.group",
+                                                    "mode": "data",
+                                                    "type": "ibm_resource_group",
+                                                    "name": "group",
+                                                    "provider_name": "ibm",
+                                                    "schema_version": 0,
+                                                    "values": {
+                                                        "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                                        "is_default": null,
+                                                        "name": "Default"
+                                                    }
+                                                }
+                                            ]
+                                        ],
+                                        "required": [
+                                            "address",
+                                            "mode",
+                                            "type",
+                                            "name",
+                                            "provider_name",
+                                            "schema_version",
+                                            "values"
+                                        ],
+                                        "properties": {
+                                            "address": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/address",
+                                                "type": "string",
+                                                "title": "The address schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "data.ibm_resource_group.group"
+                                                ]
+                                            },
+                                            "mode": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/mode",
+                                                "type": "string",
+                                                "title": "The mode schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "data"
+                                                ]
+                                            },
+                                            "type": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/type",
+                                                "type": "string",
+                                                "title": "The type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "ibm_resource_group"
+                                                ]
+                                            },
+                                            "name": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/name",
+                                                "type": "string",
+                                                "title": "The name schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "group"
+                                                ]
+                                            },
+                                            "provider_name": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/provider_name",
+                                                "type": "string",
+                                                "title": "The provider_name schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "ibm"
+                                                ]
+                                            },
+                                            "schema_version": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/schema_version",
+                                                "type": "integer",
+                                                "title": "The schema_version schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 0,
+                                                "examples": [
+                                                    0
+                                                ]
+                                            },
+                                            "values": {
+                                                "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/values",
+                                                "type": "object",
+                                                "title": "The values schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "id": "a975984c8bc64b6a8085982d54e88ff6",
+                                                        "is_default": null,
+                                                        "name": "Default"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "id",
+                                                    "is_default",
+                                                    "name"
+                                                ],
+                                                "properties": {
+                                                    "id": {
+                                                        "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/values/properties/id",
+                                                        "type": "string",
+                                                        "title": "The id schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "a975984c8bc64b6a8085982d54e88ff6"
+                                                        ]
+                                                    },
+                                                    "is_default": {
+                                                        "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/values/properties/is_default",
+                                                        "type": "null",
+                                                        "title": "The is_default schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": null,
+                                                        "examples": [
+                                                            null
+                                                        ]
+                                                    },
+                                                    "name": {
+                                                        "$id": "#/properties/prior_state/properties/values/properties/root_module/properties/resources/items/properties/values/properties/name",
+                                                        "type": "string",
+                                                        "title": "The name schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "Default"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "configuration": {
+            "$id": "#/properties/configuration",
+            "type": "object",
+            "title": "The configuration schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "provider_config": {
+                        "ibm": {
+                            "name": "ibm",
+                            "expressions": {
+                                "ibmcloud_api_key": {
+                                    "references": [
+                                        "var.ibmcloud_api_key"
+                                    ]
+                                },
+                                "region": {
+                                    "references": [
+                                        "var.region"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "root_module": {
+                        "resources": [
+                            {
+                                "address": "ibm_cis.cis_instance",
+                                "mode": "managed",
+                                "type": "ibm_cis",
+                                "name": "cis_instance",
+                                "provider_config_key": "ibm",
+                                "expressions": {
+                                    "location": {
+                                        "constant_value": "global"
+                                    },
+                                    "name": {
+                                        "constant_value": "cis-tf"
+                                    },
+                                    "plan": {
+                                        "constant_value": "standard"
+                                    },
+                                    "resource_group_id": {
+                                        "references": [
+                                            "data.ibm_resource_group.group"
+                                        ]
+                                    },
+                                    "tags": {
+                                        "constant_value": [
+                                            "dev",
+                                            "think2020"
+                                        ]
+                                    },
+                                    "timeouts": {
+                                        "create": {
+                                            "constant_value": "15m"
+                                        },
+                                        "delete": {
+                                            "constant_value": "15m"
+                                        },
+                                        "update": {
+                                            "constant_value": "15m"
+                                        }
+                                    }
+                                },
+                                "schema_version": 0
+                            },
+                            {
+                                "address": "ibm_cis_domain.cis_instance",
+                                "mode": "managed",
+                                "type": "ibm_cis_domain",
+                                "name": "cis_instance",
+                                "provider_config_key": "ibm",
+                                "expressions": {
+                                    "cis_id": {
+                                        "references": [
+                                            "ibm_cis.cis_instance"
+                                        ]
+                                    },
+                                    "domain": {
+                                        "constant_value": "demo.ibm.com"
+                                    }
+                                },
+                                "schema_version": 0
+                            },
+                            {
+                                "address": "ibm_cis_domain_settings.cis_instance",
+                                "mode": "managed",
+                                "type": "ibm_cis_domain_settings",
+                                "name": "cis_instance",
+                                "provider_config_key": "ibm",
+                                "expressions": {
+                                    "cis_id": {
+                                        "references": [
+                                            "ibm_cis.cis_instance"
+                                        ]
+                                    },
+                                    "domain_id": {
+                                        "references": [
+                                            "ibm_cis_domain.cis_instance"
+                                        ]
+                                    },
+                                    "min_tls_version": {
+                                        "constant_value": "1.2"
+                                    },
+                                    "ssl": {
+                                        "constant_value": "full"
+                                    },
+                                    "waf": {
+                                        "constant_value": "off"
+                                    }
+                                },
+                                "schema_version": 0
+                            },
+                            {
+                                "address": "data.ibm_resource_group.group",
+                                "mode": "data",
+                                "type": "ibm_resource_group",
+                                "name": "group",
+                                "provider_config_key": "ibm",
+                                "expressions": {
+                                    "name": {
+                                        "references": [
+                                            "var.resource_group"
+                                        ]
+                                    }
+                                },
+                                "schema_version": 0
+                            }
+                        ],
+                        "variables": {
+                            "ibmcloud_api_key": {},
+                            "region": {},
+                            "resource_group": {}
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "provider_config",
+                "root_module"
+            ],
+            "properties": {
+                "provider_config": {
+                    "$id": "#/properties/configuration/properties/provider_config",
+                    "type": "object",
+                    "title": "The provider_config schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "ibm": {
+                                "name": "ibm",
+                                "expressions": {
+                                    "ibmcloud_api_key": {
+                                        "references": [
+                                            "var.ibmcloud_api_key"
+                                        ]
+                                    },
+                                    "region": {
+                                        "references": [
+                                            "var.region"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "required": [
+                        "ibm"
+                    ],
+                    "properties": {
+                        "ibm": {
+                            "$id": "#/properties/configuration/properties/provider_config/properties/ibm",
+                            "type": "object",
+                            "title": "The ibm schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "name": "ibm",
+                                    "expressions": {
+                                        "ibmcloud_api_key": {
+                                            "references": [
+                                                "var.ibmcloud_api_key"
+                                            ]
+                                        },
+                                        "region": {
+                                            "references": [
+                                                "var.region"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "required": [
+                                "name",
+                                "expressions"
+                            ],
+                            "properties": {
+                                "name": {
+                                    "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/name",
+                                    "type": "string",
+                                    "title": "The name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "ibm"
+                                    ]
+                                },
+                                "expressions": {
+                                    "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions",
+                                    "type": "object",
+                                    "title": "The expressions schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "ibmcloud_api_key": {
+                                                "references": [
+                                                    "var.ibmcloud_api_key"
+                                                ]
+                                            },
+                                            "region": {
+                                                "references": [
+                                                    "var.region"
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "required": [
+                                        "ibmcloud_api_key",
+                                        "region"
+                                    ],
+                                    "properties": {
+                                        "ibmcloud_api_key": {
+                                            "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions/properties/ibmcloud_api_key",
+                                            "type": "object",
+                                            "title": "The ibmcloud_api_key schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "references": [
+                                                        "var.ibmcloud_api_key"
+                                                    ]
+                                                }
+                                            ],
+                                            "required": [
+                                                "references"
+                                            ],
+                                            "properties": {
+                                                "references": {
+                                                    "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions/properties/ibmcloud_api_key/properties/references",
+                                                    "type": "array",
+                                                    "title": "The references schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            "var.ibmcloud_api_key"
+                                                        ]
+                                                    ],
+                                                    "additionalItems": false,
+                                                    "items": {
+                                                        "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions/properties/ibmcloud_api_key/properties/references/items",
+                                                        "type": "string",
+                                                        "title": "The items schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            [
+                                                                "var.ibmcloud_api_key"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        },
+                                        "region": {
+                                            "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions/properties/region",
+                                            "type": "object",
+                                            "title": "The region schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "references": [
+                                                        "var.region"
+                                                    ]
+                                                }
+                                            ],
+                                            "required": [
+                                                "references"
+                                            ],
+                                            "properties": {
+                                                "references": {
+                                                    "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions/properties/region/properties/references",
+                                                    "type": "array",
+                                                    "title": "The references schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            "var.region"
+                                                        ]
+                                                    ],
+                                                    "additionalItems": false,
+                                                    "items": {
+                                                        "$id": "#/properties/configuration/properties/provider_config/properties/ibm/properties/expressions/properties/region/properties/references/items",
+                                                        "type": "string",
+                                                        "title": "The items schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            [
+                                                                "var.region"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "root_module": {
+                    "$id": "#/properties/configuration/properties/root_module",
+                    "type": "object",
+                    "title": "The root_module schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "resources": [
+                                {
+                                    "address": "ibm_cis.cis_instance",
+                                    "mode": "managed",
+                                    "type": "ibm_cis",
+                                    "name": "cis_instance",
+                                    "provider_config_key": "ibm",
+                                    "expressions": {
+                                        "location": {
+                                            "constant_value": "global"
+                                        },
+                                        "name": {
+                                            "constant_value": "cis-tf"
+                                        },
+                                        "plan": {
+                                            "constant_value": "standard"
+                                        },
+                                        "resource_group_id": {
+                                            "references": [
+                                                "data.ibm_resource_group.group"
+                                            ]
+                                        },
+                                        "tags": {
+                                            "constant_value": [
+                                                "dev",
+                                                "think2020"
+                                            ]
+                                        },
+                                        "timeouts": {
+                                            "create": {
+                                                "constant_value": "15m"
+                                            },
+                                            "delete": {
+                                                "constant_value": "15m"
+                                            },
+                                            "update": {
+                                                "constant_value": "15m"
+                                            }
+                                        }
+                                    },
+                                    "schema_version": 0
+                                },
+                                {
+                                    "address": "ibm_cis_domain.cis_instance",
+                                    "mode": "managed",
+                                    "type": "ibm_cis_domain",
+                                    "name": "cis_instance",
+                                    "provider_config_key": "ibm",
+                                    "expressions": {
+                                        "cis_id": {
+                                            "references": [
+                                                "ibm_cis.cis_instance"
+                                            ]
+                                        },
+                                        "domain": {
+                                            "constant_value": "demo.ibm.com"
+                                        }
+                                    },
+                                    "schema_version": 0
+                                },
+                                {
+                                    "address": "ibm_cis_domain_settings.cis_instance",
+                                    "mode": "managed",
+                                    "type": "ibm_cis_domain_settings",
+                                    "name": "cis_instance",
+                                    "provider_config_key": "ibm",
+                                    "expressions": {
+                                        "cis_id": {
+                                            "references": [
+                                                "ibm_cis.cis_instance"
+                                            ]
+                                        },
+                                        "domain_id": {
+                                            "references": [
+                                                "ibm_cis_domain.cis_instance"
+                                            ]
+                                        },
+                                        "min_tls_version": {
+                                            "constant_value": "1.2"
+                                        },
+                                        "ssl": {
+                                            "constant_value": "full"
+                                        },
+                                        "waf": {
+                                            "constant_value": "off"
+                                        }
+                                    },
+                                    "schema_version": 0
+                                },
+                                {
+                                    "address": "data.ibm_resource_group.group",
+                                    "mode": "data",
+                                    "type": "ibm_resource_group",
+                                    "name": "group",
+                                    "provider_config_key": "ibm",
+                                    "expressions": {
+                                        "name": {
+                                            "references": [
+                                                "var.resource_group"
+                                            ]
+                                        }
+                                    },
+                                    "schema_version": 0
+                                }
+                            ],
+                            "variables": {
+                                "ibmcloud_api_key": {},
+                                "region": {},
+                                "resource_group": {}
+                            }
+                        }
+                    ],
+                    "required": [
+                        "resources",
+                        "variables"
+                    ],
+                    "properties": {
+                        "resources": {
+                            "$id": "#/properties/configuration/properties/root_module/properties/resources",
+                            "type": "array",
+                            "title": "The resources schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "address": "ibm_cis.cis_instance",
+                                        "mode": "managed",
+                                        "type": "ibm_cis",
+                                        "name": "cis_instance",
+                                        "provider_config_key": "ibm",
+                                        "expressions": {
+                                            "location": {
+                                                "constant_value": "global"
+                                            },
+                                            "name": {
+                                                "constant_value": "cis-tf"
+                                            },
+                                            "plan": {
+                                                "constant_value": "standard"
+                                            },
+                                            "resource_group_id": {
+                                                "references": [
+                                                    "data.ibm_resource_group.group"
+                                                ]
+                                            },
+                                            "tags": {
+                                                "constant_value": [
+                                                    "dev",
+                                                    "think2020"
+                                                ]
+                                            },
+                                            "timeouts": {
+                                                "create": {
+                                                    "constant_value": "15m"
+                                                },
+                                                "delete": {
+                                                    "constant_value": "15m"
+                                                },
+                                                "update": {
+                                                    "constant_value": "15m"
+                                                }
+                                            }
+                                        },
+                                        "schema_version": 0
+                                    },
+                                    {
+                                        "address": "ibm_cis_domain.cis_instance",
+                                        "mode": "managed",
+                                        "type": "ibm_cis_domain",
+                                        "name": "cis_instance",
+                                        "provider_config_key": "ibm",
+                                        "expressions": {
+                                            "cis_id": {
+                                                "references": [
+                                                    "ibm_cis.cis_instance"
+                                                ]
+                                            },
+                                            "domain": {
+                                                "constant_value": "demo.ibm.com"
+                                            }
+                                        },
+                                        "schema_version": 0
+                                    }
+                                ]
+                            ],
+                            "additionalItems": false,
+                            "items": {
+                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items",
+                                "type": "object",
+                                "title": "The items schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    [
+                                        {
+                                            "address": "ibm_cis.cis_instance",
+                                            "mode": "managed",
+                                            "type": "ibm_cis",
+                                            "name": "cis_instance",
+                                            "provider_config_key": "ibm",
+                                            "expressions": {
+                                                "location": {
+                                                    "constant_value": "global"
+                                                },
+                                                "name": {
+                                                    "constant_value": "cis-tf"
+                                                },
+                                                "plan": {
+                                                    "constant_value": "standard"
+                                                },
+                                                "resource_group_id": {
+                                                    "references": [
+                                                        "data.ibm_resource_group.group"
+                                                    ]
+                                                },
+                                                "tags": {
+                                                    "constant_value": [
+                                                        "dev",
+                                                        "think2020"
+                                                    ]
+                                                },
+                                                "timeouts": {
+                                                    "create": {
+                                                        "constant_value": "15m"
+                                                    },
+                                                    "delete": {
+                                                        "constant_value": "15m"
+                                                    },
+                                                    "update": {
+                                                        "constant_value": "15m"
+                                                    }
+                                                }
+                                            },
+                                            "schema_version": 0
+                                        },
+                                        {
+                                            "address": "ibm_cis_domain.cis_instance",
+                                            "mode": "managed",
+                                            "type": "ibm_cis_domain",
+                                            "name": "cis_instance",
+                                            "provider_config_key": "ibm",
+                                            "expressions": {
+                                                "cis_id": {
+                                                    "references": [
+                                                        "ibm_cis.cis_instance"
+                                                    ]
+                                                },
+                                                "domain": {
+                                                    "constant_value": "demo.ibm.com"
+                                                }
+                                            },
+                                            "schema_version": 0
+                                        },
+                                        {
+                                            "address": "ibm_cis_domain_settings.cis_instance",
+                                            "mode": "managed",
+                                            "type": "ibm_cis_domain_settings",
+                                            "name": "cis_instance",
+                                            "provider_config_key": "ibm",
+                                            "expressions": {
+                                                "cis_id": {
+                                                    "references": [
+                                                        "ibm_cis.cis_instance"
+                                                    ]
+                                                },
+                                                "domain_id": {
+                                                    "references": [
+                                                        "ibm_cis_domain.cis_instance"
+                                                    ]
+                                                },
+                                                "min_tls_version": {
+                                                    "constant_value": "1.2"
+                                                },
+                                                "ssl": {
+                                                    "constant_value": "full"
+                                                },
+                                                "waf": {
+                                                    "constant_value": "off"
+                                                }
+                                            },
+                                            "schema_version": 0
+                                        },
+                                        {
+                                            "address": "data.ibm_resource_group.group",
+                                            "mode": "data",
+                                            "type": "ibm_resource_group",
+                                            "name": "group",
+                                            "provider_config_key": "ibm",
+                                            "expressions": {
+                                                "name": {
+                                                    "references": [
+                                                        "var.resource_group"
+                                                    ]
+                                                }
+                                            },
+                                            "schema_version": 0
+                                        }
+                                    ]
+                                ],
+                                "required": [
+                                    "address",
+                                    "mode",
+                                    "type",
+                                    "name",
+                                    "provider_config_key",
+                                    "expressions",
+                                    "schema_version"
+                                ],
+                                "properties": {
+                                    "address": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/address",
+                                        "type": "string",
+                                        "title": "The address schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ibm_cis.cis_instance"
+                                        ]
+                                    },
+                                    "mode": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/mode",
+                                        "type": "string",
+                                        "title": "The mode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "managed"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/type",
+                                        "type": "string",
+                                        "title": "The type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ibm_cis"
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "cis_instance"
+                                        ]
+                                    },
+                                    "provider_config_key": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/provider_config_key",
+                                        "type": "string",
+                                        "title": "The provider_config_key schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ibm"
+                                        ]
+                                    },
+                                    "expressions": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions",
+                                        "type": "object",
+                                        "title": "The expressions schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "location": {
+                                                    "constant_value": "global"
+                                                },
+                                                "name": {
+                                                    "constant_value": "cis-tf"
+                                                },
+                                                "plan": {
+                                                    "constant_value": "standard"
+                                                },
+                                                "resource_group_id": {
+                                                    "references": [
+                                                        "data.ibm_resource_group.group"
+                                                    ]
+                                                },
+                                                "tags": {
+                                                    "constant_value": [
+                                                        "dev",
+                                                        "think2020"
+                                                    ]
+                                                },
+                                                "timeouts": {
+                                                    "create": {
+                                                        "constant_value": "15m"
+                                                    },
+                                                    "delete": {
+                                                        "constant_value": "15m"
+                                                    },
+                                                    "update": {
+                                                        "constant_value": "15m"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "required": [
+                                            "location",
+                                            "name",
+                                            "plan",
+                                            "resource_group_id",
+                                            "tags",
+                                            "timeouts"
+                                        ],
+                                        "properties": {
+                                            "location": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/location",
+                                                "type": "object",
+                                                "title": "The location schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "constant_value": "global"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "constant_value"
+                                                ],
+                                                "properties": {
+                                                    "constant_value": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/location/properties/constant_value",
+                                                        "type": "string",
+                                                        "title": "The constant_value schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "global"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "name": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/name",
+                                                "type": "object",
+                                                "title": "The name schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "constant_value": "cis-tf"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "constant_value"
+                                                ],
+                                                "properties": {
+                                                    "constant_value": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/name/properties/constant_value",
+                                                        "type": "string",
+                                                        "title": "The constant_value schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "cis-tf"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "plan": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/plan",
+                                                "type": "object",
+                                                "title": "The plan schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "constant_value": "standard"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "constant_value"
+                                                ],
+                                                "properties": {
+                                                    "constant_value": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/plan/properties/constant_value",
+                                                        "type": "string",
+                                                        "title": "The constant_value schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "standard"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "resource_group_id": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/resource_group_id",
+                                                "type": "object",
+                                                "title": "The resource_group_id schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "references": [
+                                                            "data.ibm_resource_group.group"
+                                                        ]
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "references"
+                                                ],
+                                                "properties": {
+                                                    "references": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/resource_group_id/properties/references",
+                                                        "type": "array",
+                                                        "title": "The references schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": [],
+                                                        "examples": [
+                                                            [
+                                                                "data.ibm_resource_group.group"
+                                                            ]
+                                                        ],
+                                                        "additionalItems": false,
+                                                        "items": {
+                                                            "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/resource_group_id/properties/references/items",
+                                                            "type": "string",
+                                                            "title": "The items schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                [
+                                                                    "data.ibm_resource_group.group"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "tags": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/tags",
+                                                "type": "object",
+                                                "title": "The tags schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "constant_value": [
+                                                            "dev",
+                                                            "think2020"
+                                                        ]
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "constant_value"
+                                                ],
+                                                "properties": {
+                                                    "constant_value": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/tags/properties/constant_value",
+                                                        "type": "array",
+                                                        "title": "The constant_value schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": [],
+                                                        "examples": [
+                                                            [
+                                                                "dev",
+                                                                "think2020"
+                                                            ]
+                                                        ],
+                                                        "additionalItems": false,
+                                                        "items": {
+                                                            "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/tags/properties/constant_value/items",
+                                                            "type": "string",
+                                                            "title": "The items schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                [
+                                                                    "dev",
+                                                                    "think2020"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            },
+                                            "timeouts": {
+                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts",
+                                                "type": "object",
+                                                "title": "The timeouts schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "create": {
+                                                            "constant_value": "15m"
+                                                        },
+                                                        "delete": {
+                                                            "constant_value": "15m"
+                                                        },
+                                                        "update": {
+                                                            "constant_value": "15m"
+                                                        }
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "create",
+                                                    "delete",
+                                                    "update"
+                                                ],
+                                                "properties": {
+                                                    "create": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts/properties/create",
+                                                        "type": "object",
+                                                        "title": "The create schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": {},
+                                                        "examples": [
+                                                            {
+                                                                "constant_value": "15m"
+                                                            }
+                                                        ],
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts/properties/create/properties/constant_value",
+                                                                "type": "string",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "15m"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    },
+                                                    "delete": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts/properties/delete",
+                                                        "type": "object",
+                                                        "title": "The delete schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": {},
+                                                        "examples": [
+                                                            {
+                                                                "constant_value": "15m"
+                                                            }
+                                                        ],
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts/properties/delete/properties/constant_value",
+                                                                "type": "string",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "15m"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    },
+                                                    "update": {
+                                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts/properties/update",
+                                                        "type": "object",
+                                                        "title": "The update schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": {},
+                                                        "examples": [
+                                                            {
+                                                                "constant_value": "15m"
+                                                            }
+                                                        ],
+                                                        "required": [
+                                                            "constant_value"
+                                                        ],
+                                                        "properties": {
+                                                            "constant_value": {
+                                                                "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/expressions/properties/timeouts/properties/update/properties/constant_value",
+                                                                "type": "string",
+                                                                "title": "The constant_value schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "15m"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    }
+                                                },
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    },
+                                    "schema_version": {
+                                        "$id": "#/properties/configuration/properties/root_module/properties/resources/items/properties/schema_version",
+                                        "type": "integer",
+                                        "title": "The schema_version schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "variables": {
+                            "$id": "#/properties/configuration/properties/root_module/properties/variables",
+                            "type": "object",
+                            "title": "The variables schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "ibmcloud_api_key": {},
+                                    "region": {},
+                                    "resource_group": {}
+                                }
+                            ],
+                            "required": [
+                                "ibmcloud_api_key",
+                                "region",
+                                "resource_group"
+                            ],
+                            "properties": {
+                                "ibmcloud_api_key": {
+                                    "$id": "#/properties/configuration/properties/root_module/properties/variables/properties/ibmcloud_api_key",
+                                    "type": "object",
+                                    "title": "The ibmcloud_api_key schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {}
+                                    ],
+                                    "required": [],
+                                    "additionalProperties": false
+                                },
+                                "region": {
+                                    "$id": "#/properties/configuration/properties/root_module/properties/variables/properties/region",
+                                    "type": "object",
+                                    "title": "The region schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {}
+                                    ],
+                                    "required": [],
+                                    "additionalProperties": false
+                                },
+                                "resource_group": {
+                                    "$id": "#/properties/configuration/properties/root_module/properties/variables/properties/resource_group",
+                                    "type": "object",
+                                    "title": "The resource_group schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {}
+                                    ],
+                                    "required": [],
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
