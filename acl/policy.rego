@@ -10,7 +10,7 @@ default allow = false
 # METADATA
 # type: rule
 # schemas:
-#   data.acl: schemas.acl-schema
+#   - data.acl: schemas.acl-schema
 allow {
         access = data.acl[input.user]
         access[_] == input.operation
@@ -20,8 +20,8 @@ allow {
 # METADATA for whocan rule
 # type: rule
 # schemas:
-#   input: schemas.whocan-input-schema
-#   data.acl: schemas.acl-schema
+#   - input: schemas.whocan-input-schema
+#   - data.acl: schemas.acl-schema
 whocan[user] {
         access = acl[user]
         access[_] == input.operation
