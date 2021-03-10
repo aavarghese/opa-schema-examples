@@ -3,8 +3,10 @@ package ibmcloud.tfplan
 import data.plan as tfplan
 
 # lists all the variables from variable section
-
-#@rulesSchema=data.plan:schemas.plan-schema
+# METADATA
+# type: rule
+# schemas:
+#   data.plan: schemas.plan-schema
 variables = vars{
     some k
     vars := { k : v |
