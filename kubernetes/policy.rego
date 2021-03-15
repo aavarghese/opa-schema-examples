@@ -1,7 +1,7 @@
 package kubernetes.admission                                                
 
 # METADATA
-# type: rule
+# scope: rule
 # schemas: 
 #   - input.request.object: schemas.kubernetes.pod
 deny[msg] {                                                                

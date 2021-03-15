@@ -8,7 +8,7 @@ default allow = false
 
 # Second rule comment with metadata
 # METADATA
-# type: rule
+# scope: rule
 # schemas:
 #   - data.acl: schemas.acl-schema
 allow {
@@ -18,7 +18,7 @@ allow {
 
 # Third rule comment with metadata
 # METADATA for whocan rule
-# type: rule
+# scope: rule
 # schemas:
 #   - input: schemas.whocan-input-schema
 #   - data.acl: schemas.acl-schema

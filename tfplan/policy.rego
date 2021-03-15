@@ -4,7 +4,7 @@ import data.plan as tfplan
 
 # lists all the variables from variable section
 # METADATA
-# type: rule
+# scope: rule
 # schemas:
 #   - data.plan: schemas.plan-schema
 variables = vars{
