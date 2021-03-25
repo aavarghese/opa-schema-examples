@@ -12,12 +12,11 @@ import data.lib.openshift
 # METADATA
 # scope: rule
 # schemas:
-#   - konstraint_core.resource: release-4.5-local.pod-v1
+#   - data.lib.konstraint.core.resource: schema["pod-v1"]
 violation[msg] {
   openshift.is_policy_active("RHCOP-OCP_BESTPRACT-00001")
   openshift.is_pod_or_networking
 
-  konstraint_core.resource.metadata1
   #TODO: Expect the schema to fail on this... but it doesnt :/
   not is_common_labels_set(konstraint_core.resource.metadata1)
 

@@ -6,7 +6,7 @@ import data.plan as tfplan
 # METADATA
 # scope: rule
 # schemas:
-#   - data.plan: schemas.plan-schema
+#   - data.plan: schema["plan-schema"]
 variables = vars{
     some k
     vars := { k : v |
