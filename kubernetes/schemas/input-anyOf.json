@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "request"
+    ],
+    "properties": {
+        "kind": {
+            "$id": "#/properties/kind",
+            "type": "string",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "request": {
+            "$id": "#/properties/request",
+            "type": "object",
+            "description": "An explanation about the purpose of this instance.",
+            "anyOf": [
+                {
+                   "properties": {
+                       "kind": {
+                           "type": "object",
+                           "description": "An explanation about the purpose of this instance.",
+                           "properties": {
+                               "kind": {
+                                   "type": "string",
+                                   "description": "An explanation about the purpose of this instance."
+                               },
+                               "version": {
+                                   "type": "string",
+                                   "description": "An explanation about the purpose of this instance."
+                               }
+                           },
+                           "additionalProperties": false
+                       }
+                   }
+                },
+                {
+                   "properties": {
+                       "server": {
+                           "type": "object",
+                           "description": "An explanation about the purpose of this instance.",
+                           "properties": {
+                               "accessNum": {
+                                   "type": "integer",
+                                   "description": "An explanation about the purpose of this instance."
+                               },
+                               "version": {
+                                   "type": "string",
+                                   "description": "An explanation about the purpose of this instance."
+                               }
+                           },
+                           "additionalProperties": false
+                       }
+                   }
+                }
+            ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
