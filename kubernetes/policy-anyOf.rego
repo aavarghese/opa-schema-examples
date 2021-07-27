@@ -1,7 +1,5 @@
 package kubernetes.admission                                                
 
-default deny = true 
-
 # METADATA
 # scope: rule
 # schemas: 
